@@ -2,8 +2,13 @@
 name = "Manav"
 email = "manavpampher@gmail.com"
 
-# Display the information
+# Print the information
+# what if I change the existing info ^
 print("Name:", name)
 print("Email:", email)
 
 
+names = ["Jitesh", "Manav"]
+
+for element in names:
+    print(element, end = " ")
