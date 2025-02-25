@@ -12,3 +12,5 @@ print("-" * 60)
 
 for person in people:
     print(f"{person['first_name']:<15}{person['last_name']:<15}{person['email']:<30}")
+
+
