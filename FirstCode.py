@@ -1,14 +1,16 @@
-# Store personal information in variables
-name = "Manav"
-email = "manavpampher@gmail.com"
+people = [
+    {"first_name": "Manav", "last_name": "Pampher", "email": "manavpampher@gmail.com"},
+    {"first_name": "Jitesh", "last_name": "Singh", "email": "jitesh.singh@example.com"},
+    {"first_name": "Yash", "last_name": "Raghuvanshi", "email": "yashraghuvans@gmail.com"},
+    {"first_name": "Rahul", "last_name": "Singh", "email": "rahul.singh@example.com"},
+    {"first_name": "Priya", "last_name": "Singh", "email": "priya.singh@example.com"},
+]
 
-# Print the information
-# what if I change the existing info ^
-print("Name:", name)
-print("Email:", email)
+
+print(f"{'First Name':<15}{'Last Name':<15}{'Email':<30}") 
+print("-" * 60)  
+
+for person in people:
+    print(f"{person['first_name']:<15}{person['last_name']:<15}{person['email']:<30}")
 
 
-names = ["Jitesh", "Manav"]
-
-for element in names:
-    print(element, end = " ")
