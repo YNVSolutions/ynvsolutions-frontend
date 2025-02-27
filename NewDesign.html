@@ -38,8 +38,16 @@
             cursor: pointer;
             width: 100%;
         }
-        button: hover {
+        button:hover {
             background-color: #45a049;
+        }
+        .invoice {
+            display: none;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -47,6 +55,11 @@
     <h1>Register</h1>
     <div class="form-container">
         <form>
+            <div>
+                <!-- dummy dropdown -->
+                <label for="name">Product:</label>
+                <input type="text" id="product" name="product" required>
+            </div>
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -58,10 +71,37 @@
              </div>
             <div class="form-group">
                 <label for="address">Address:</label>
-                <input type="text" id="Address" name="Address" required>
+                <input type="text" id="address" name="address" required>
             </div>
-             <button class="button">Submit</button>
+             <button type="button" onclick="generateInvoice()">Generate Invoice</button>
          </form>
     </div>
+
+    <div class="invoice" id="invoice">
+        <h2>Invoice</h2>
+        <p><strong>Product:</strong> <span id="invoiceProduct"></span></p>
+        <p><strong>Name:</strong> <span id="invoiceName"></span></p>
+        <p><strong>Email:</strong> <span id="invoiceEmail"></span></p>
+        <p><strong>Address:</strong> <span id="invoiceAddress"></span></p>
+    </div>
+    
+    <script>
+        function generateInvoice() {
+            
+            let product = document.getElementById("product").value;  // The id "product" to be used when the product dropdown is created
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let address = document.getElementById("address").value;
+    
+            
+            document.getElementById("invoiceProduct").innerText = product;
+            document.getElementById("invoiceName").innerText = name;
+            document.getElementById("invoiceEmail").innerText = email;
+            document.getElementById("invoiceAddress").innerText = address;
+    
+            
+            document.getElementById("invoice").style.display = "block";
+        }
+    </script>
 </body>
 </html>
