@@ -19,15 +19,16 @@
             border: 1px solid #ccc;
             border-radius: 5px;
         }
-        .form-group {
+        .form-group, .dropdown {
             margin-bottom: 15px;
         }
-        input {
+        input, select { 
             width: 100%;
             padding: 8px;
             margin-top: 5px;
             border: 1px solid #ccc;
             border-radius: 4px;
+            box-sizing: border-box;
         }
         button {
             background-color: #4CAF50;
@@ -55,10 +56,11 @@
     <h1>Register</h1>
     <div class="form-container">
         <form>
-            <div>
-                <!-- dummy dropdown -->
-                <label for="name">Product:</label>
-                <input type="text" id="product" name="product" required>
+            <div class="dropdown">
+                <label for="product">Product:</label>
+                <select id="product" name="product" required>
+                    <option value="">Select a product</option>
+                </select>
             </div>
             <div class="form-group">
                 <label for="name">Name:</label>
@@ -82,21 +84,37 @@
     </div>
     
     <script>
+        const products = [
+            "Laptop",
+            "Smartphone",
+            "Tablet",
+            "Headphones",
+            "Smartwatch",
+            "Camera",
+            "Printer"
+        ];
+
+        const productSelect = document.getElementById("product");
+
+        products.forEach(product => {
+            const option = document.createElement("option");
+            option.value = product;
+            option.text = product;
+            productSelect.appendChild(option);
+        });
+
         function generateInvoice() {
-            
-            let product = document.getElementById("product").value;  // The id "product" to be used when the product dropdown is created
+            let product = document.getElementById("product").value;
             let name = document.getElementById("name").value;
             let email = document.getElementById("email").value;
             let address = document.getElementById("address").value;
     
-            
             document.getElementById("invoiceProduct").innerText = product;
             document.getElementById("invoiceName").innerText = name;
             document.getElementById("invoiceEmail").innerText = email;
             document.getElementById("invoiceAddress").innerText = address;
     
-            
-            document.getElementById("invoice").style.display = "block";
+           document.getElementById("invoice").style.display = "block";
         }
     </script>
 </body>
