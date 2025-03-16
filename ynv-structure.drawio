@@ -1,261 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-      <mxfile host="codeviz.app" modified="2025-03-16T09:18:33.075Z" agent="CodeViz Exporter" version="14.6.5" type="device">
+      <mxfile host="codeviz.app" modified="2025-03-16T11:18:06.448Z" agent="CodeViz Exporter" version="14.6.5" type="device">
         <diagram id="codeviz-diagram" name="System Diagram">
           <mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
             <root>
               <mxCell id="0"/>
               <mxCell id="1" parent="0"/>
               <mxCell id="subGraph2" value="" style="html=1;whiteSpace=wrap;container=1;fillColor=#dae8fc;strokeColor=#6c8ebf;dashed=1;fillOpacity=20;strokeWidth=2;containerType=none;recursiveResize=0;movable=1;resizable=1;autosize=0;dropTarget=0" vertex="1" parent="subGraph3">
-                <mxGeometry x="184.66666666666666" y="955" width="380" height="220" as="geometry"/>
+                <mxGeometry x="50" y="195" width="380" height="220" as="geometry"/>
               </mxCell>
-              <mxCell id="subGraph2_label" value="Styling Layer" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;labelBackgroundColor=white;spacing=5" vertex="1" parent="subGraph3">
-                <mxGeometry x="192.66666666666666" y="963" width="304" height="24" as="geometry"/>
+              <mxCell id="subGraph2_label" value="Backend Components" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;labelBackgroundColor=white;spacing=5" vertex="1" parent="subGraph3">
+                <mxGeometry x="58" y="203" width="304" height="24" as="geometry"/>
               </mxCell>
-<mxCell id="subGraph1" value="" style="html=1;whiteSpace=wrap;container=1;fillColor=#dae8fc;strokeColor=#6c8ebf;dashed=1;fillOpacity=20;strokeWidth=2;containerType=none;recursiveResize=0;movable=1;resizable=1;autosize=0;dropTarget=0" vertex="1" parent="subGraph3">
-                <mxGeometry x="88" y="565" width="891" height="350" as="geometry"/>
+<mxCell id="subGraph0" value="" style="html=1;whiteSpace=wrap;container=1;fillColor=#dae8fc;strokeColor=#6c8ebf;dashed=1;fillOpacity=20;strokeWidth=2;containerType=none;recursiveResize=0;movable=1;resizable=1;autosize=0;dropTarget=0" vertex="1" parent="subGraph1">
+                <mxGeometry x="50" y="195" width="380" height="220" as="geometry"/>
               </mxCell>
-              <mxCell id="subGraph1_label" value="Core Components" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;labelBackgroundColor=white;spacing=5" vertex="1" parent="subGraph3">
-                <mxGeometry x="96" y="573" width="815" height="24" as="geometry"/>
-              </mxCell>
-<mxCell id="subGraph0" value="" style="html=1;whiteSpace=wrap;container=1;fillColor=#dae8fc;strokeColor=#6c8ebf;dashed=1;fillOpacity=20;strokeWidth=2;containerType=none;recursiveResize=0;movable=1;resizable=1;autosize=0;dropTarget=0" vertex="1" parent="subGraph3">
-                <mxGeometry x="339" y="195" width="270" height="330" as="geometry"/>
-              </mxCell>
-              <mxCell id="subGraph0_label" value="Page Components" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;labelBackgroundColor=white;spacing=5" vertex="1" parent="subGraph3">
-                <mxGeometry x="347" y="203" width="194" height="24" as="geometry"/>
+              <mxCell id="subGraph0_label" value="Frontend Components" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;labelBackgroundColor=white;spacing=5" vertex="1" parent="subGraph1">
+                <mxGeometry x="58" y="203" width="304" height="24" as="geometry"/>
               </mxCell>
 <mxCell id="subGraph3" value="" style="html=1;whiteSpace=wrap;container=1;fillColor=#dae8fc;strokeColor=#6c8ebf;dashed=1;fillOpacity=20;strokeWidth=2;containerType=none;recursiveResize=0;movable=1;resizable=1;autosize=0;dropTarget=0" vertex="1" parent="1">
-                <mxGeometry x="70" y="187" width="951" height="1195" as="geometry"/>
+                <mxGeometry x="262" y="702" width="440" height="435" as="geometry"/>
               </mxCell>
-              <mxCell id="subGraph3_label" value="Frontend Application" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;labelBackgroundColor=white;spacing=5" vertex="1" parent="1">
-                <mxGeometry x="78" y="195" width="875" height="24" as="geometry"/>
+              <mxCell id="subGraph3_label" value="Backend Container" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;labelBackgroundColor=white;spacing=5" vertex="1" parent="1">
+                <mxGeometry x="270" y="710" width="364" height="24" as="geometry"/>
               </mxCell>
-              <mxCell id="User" value="End User" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="1">
-                    <mxGeometry x="381" y="12" width="120" height="60" as="geometry"/>
+<mxCell id="subGraph1" value="" style="html=1;whiteSpace=wrap;container=1;fillColor=#dae8fc;strokeColor=#6c8ebf;dashed=1;fillOpacity=20;strokeWidth=2;containerType=none;recursiveResize=0;movable=1;resizable=1;autosize=0;dropTarget=0" vertex="1" parent="1">
+                <mxGeometry x="32" y="187" width="440" height="435" as="geometry"/>
+              </mxCell>
+              <mxCell id="subGraph1_label" value="Frontend Container" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;labelBackgroundColor=white;spacing=5" vertex="1" parent="1">
+                <mxGeometry x="40" y="195" width="364" height="24" as="geometry"/>
+              </mxCell>
+              <mxCell id="User" value="User" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="1">
+                    <mxGeometry x="122" y="12" width="120" height="60" as="geometry"/>
                   </mxCell>
-<mxCell id="NextApp" value="Next.js Application&lt;br&gt;(Next.js 14)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph3">
-                    <mxGeometry x="369" y="120" width="120" height="60" as="geometry"/>
+<mxCell id="WebUI" value="Cat Photo App UI&lt;br&gt;HTML" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph1">
+                    <mxGeometry x="110" y="120" width="120" height="60" as="geometry"/>
                   </mxCell>
-<mxCell id="RootLayout" value="Root Layout&lt;br&gt;(Next.js Layout)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph0">
+<mxCell id="MainPage" value="Main Page Component&lt;br&gt;HTML" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph0">
                     <mxGeometry x="40" y="120" width="120" height="60" as="geometry"/>
                   </mxCell>
-<mxCell id="MainPage" value="Main Page&lt;br&gt;(Next.js Page)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph0">
-                    <mxGeometry x="70" y="230" width="120" height="60" as="geometry"/>
-                  </mxCell>
-<mxCell id="Nav" value="Navigation Component&lt;br&gt;(React/JSX)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph1">
-                    <mxGeometry x="321" y="120" width="120" height="60" as="geometry"/>
-                  </mxCell>
-<mxCell id="Hero" value="Hero Section&lt;br&gt;(React/JSX)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph1">
-                    <mxGeometry x="130" y="250" width="120" height="60" as="geometry"/>
-                  </mxCell>
-<mxCell id="About" value="About Section&lt;br&gt;(React/JSX)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph1">
-                    <mxGeometry x="270" y="250" width="120" height="60" as="geometry"/>
-                  </mxCell>
-<mxCell id="Contact" value="Contact Us&lt;br&gt;(React/JSX)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph1">
-                    <mxGeometry x="411" y="250" width="120" height="60" as="geometry"/>
-                  </mxCell>
-<mxCell id="Portfolio" value="Portfolio&lt;br&gt;(React/JSX)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph1">
-                    <mxGeometry x="551" y="250" width="120" height="60" as="geometry"/>
-                  </mxCell>
-<mxCell id="Services" value="Service Section&lt;br&gt;(React/JSX)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph1">
-                    <mxGeometry x="691" y="250" width="120" height="60" as="geometry"/>
-                  </mxCell>
-<mxCell id="Footer" value="Footer&lt;br&gt;(React/JSX)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph1">
-                    <mxGeometry x="40" y="120" width="120" height="60" as="geometry"/>
-                  </mxCell>
-<mxCell id="GlobalCSS" value="Global Styles&lt;br&gt;(TailwindCSS)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph2">
+<mxCell id="UploadSection" value="Photo Upload Section&lt;br&gt;HTML" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph0">
                     <mxGeometry x="180" y="120" width="120" height="60" as="geometry"/>
                   </mxCell>
-<mxCell id="FontSystem" value="Font System&lt;br&gt;(Google Fonts)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph2">
+<mxCell id="PythonScripts" value="Python Scripts&lt;br&gt;Python" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph3">
+                    <mxGeometry x="100" y="120" width="120" height="60" as="geometry"/>
+                  </mxCell>
+<mxCell id="FirstScript" value="First Script&lt;br&gt;Python" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph2">
                     <mxGeometry x="40" y="120" width="120" height="60" as="geometry"/>
                   </mxCell>
-              <mxCell id="edge-L_User_NextApp_0" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="User" target="NextApp">
+<mxCell id="NewScript" value="New Script&lt;br&gt;Python" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5" vertex="1" parent="subGraph2">
+                    <mxGeometry x="180" y="120" width="120" height="60" as="geometry"/>
+                  </mxCell>
+              <mxCell id="edge-L_User_WebUI_0" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="User" target="WebUI">
                   <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="edge-L_User_NextApp_0_label" value="Accesses Website" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-L_User_NextApp_0">
+                <mxCell id="edge-L_User_WebUI_0_label" value="Accesses" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-L_User_WebUI_0">
                   <mxGeometry x="-0.2" y="10" relative="1" as="geometry">
                     <mxPoint as="offset"/>
                   </mxGeometry>
                 </mxCell>
-<mxCell id="edge-L_NextApp_RootLayout_1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="NextApp" target="RootLayout">
+<mxCell id="edge-L_WebUI_MainPage_1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="WebUI" target="MainPage">
                   <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="edge-L_NextApp_RootLayout_1_label" value="Renders" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-L_NextApp_RootLayout_1">
+                <mxCell id="edge-L_WebUI_MainPage_1_label" value="Contains" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-L_WebUI_MainPage_1">
                   <mxGeometry x="-0.2" y="10" relative="1" as="geometry">
                     <mxPoint as="offset"/>
                   </mxGeometry>
                 </mxCell>
-<mxCell id="edge-L_RootLayout_MainPage_2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="RootLayout" target="MainPage">
+<mxCell id="edge-L_WebUI_UploadSection_2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="WebUI" target="UploadSection">
                   <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="edge-L_RootLayout_MainPage_2_label" value="Contains" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-L_RootLayout_MainPage_2">
+                <mxCell id="edge-L_WebUI_UploadSection_2_label" value="Contains" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-L_WebUI_UploadSection_2">
                   <mxGeometry x="-0.2" y="10" relative="1" as="geometry">
                     <mxPoint as="offset"/>
                   </mxGeometry>
                 </mxCell>
-<mxCell id="edge-L_MainPage_Nav_3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="MainPage" target="Nav">
+<mxCell id="edge-L_PythonScripts_FirstScript_3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="PythonScripts" target="FirstScript">
                   <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="edge-L_MainPage_Nav_3_label" value="Includes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-L_MainPage_Nav_3">
+                <mxCell id="edge-L_PythonScripts_FirstScript_3_label" value="Includes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-L_PythonScripts_FirstScript_3">
                   <mxGeometry x="-0.2" y="10" relative="1" as="geometry">
                     <mxPoint as="offset"/>
                   </mxGeometry>
                 </mxCell>
-<mxCell id="edge-L_MainPage_Hero_4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="MainPage" target="Hero">
+<mxCell id="edge-L_PythonScripts_NewScript_4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="PythonScripts" target="NewScript">
                   <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="edge-L_MainPage_Hero_4_label" value="Includes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-L_MainPage_Hero_4">
+                <mxCell id="edge-L_PythonScripts_NewScript_4_label" value="Includes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-L_PythonScripts_NewScript_4">
                   <mxGeometry x="-0.2" y="10" relative="1" as="geometry">
                     <mxPoint as="offset"/>
                   </mxGeometry>
                 </mxCell>
-<mxCell id="edge-L_MainPage_About_5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="MainPage" target="About">
+<mxCell id="edge-L_WebUI_PythonScripts_5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="WebUI" target="PythonScripts">
                   <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="edge-L_MainPage_About_5_label" value="Includes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-L_MainPage_About_5">
-                  <mxGeometry x="-0.2" y="10" relative="1" as="geometry">
-                    <mxPoint as="offset"/>
-                  </mxGeometry>
-                </mxCell>
-<mxCell id="edge-L_MainPage_Contact_6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="MainPage" target="Contact">
-                  <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="edge-L_MainPage_Contact_6_label" value="Can Include" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-L_MainPage_Contact_6">
-                  <mxGeometry x="-0.2" y="10" relative="1" as="geometry">
-                    <mxPoint as="offset"/>
-                  </mxGeometry>
-                </mxCell>
-<mxCell id="edge-L_MainPage_Portfolio_7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="MainPage" target="Portfolio">
-                  <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="edge-L_MainPage_Portfolio_7_label" value="Can Include" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-L_MainPage_Portfolio_7">
-                  <mxGeometry x="-0.2" y="10" relative="1" as="geometry">
-                    <mxPoint as="offset"/>
-                  </mxGeometry>
-                </mxCell>
-<mxCell id="edge-L_MainPage_Services_8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="MainPage" target="Services">
-                  <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="edge-L_MainPage_Services_8_label" value="Can Include" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-L_MainPage_Services_8">
-                  <mxGeometry x="-0.2" y="10" relative="1" as="geometry">
-                    <mxPoint as="offset"/>
-                  </mxGeometry>
-                </mxCell>
-<mxCell id="edge-L_MainPage_Footer_9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="MainPage" target="Footer">
-                  <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="edge-L_MainPage_Footer_9_label" value="Can Include" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-L_MainPage_Footer_9">
-                  <mxGeometry x="-0.2" y="10" relative="1" as="geometry">
-                    <mxPoint as="offset"/>
-                  </mxGeometry>
-                </mxCell>
-<mxCell id="edge-L_RootLayout_GlobalCSS_10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="RootLayout" target="GlobalCSS">
-                  <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="edge-L_RootLayout_GlobalCSS_10_label" value="Applies" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-L_RootLayout_GlobalCSS_10">
-                  <mxGeometry x="-0.2" y="10" relative="1" as="geometry">
-                    <mxPoint as="offset"/>
-                  </mxGeometry>
-                </mxCell>
-<mxCell id="edge-L_RootLayout_FontSystem_11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="RootLayout" target="FontSystem">
-                  <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="edge-L_RootLayout_FontSystem_11_label" value="Loads" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-L_RootLayout_FontSystem_11">
-                  <mxGeometry x="-0.2" y="10" relative="1" as="geometry">
-                    <mxPoint as="offset"/>
-                  </mxGeometry>
-                </mxCell>
-<mxCell id="edge-L_Nav_GlobalCSS_12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="Nav" target="GlobalCSS">
-                  <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="edge-L_Nav_GlobalCSS_12_label" value="Uses" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-L_Nav_GlobalCSS_12">
-                  <mxGeometry x="-0.2" y="10" relative="1" as="geometry">
-                    <mxPoint as="offset"/>
-                  </mxGeometry>
-                </mxCell>
-<mxCell id="edge-L_Hero_GlobalCSS_13" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="Hero" target="GlobalCSS">
-                  <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="edge-L_Hero_GlobalCSS_13_label" value="Uses" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-L_Hero_GlobalCSS_13">
-                  <mxGeometry x="-0.2" y="10" relative="1" as="geometry">
-                    <mxPoint as="offset"/>
-                  </mxGeometry>
-                </mxCell>
-<mxCell id="edge-L_About_GlobalCSS_14" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="About" target="GlobalCSS">
-                  <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="edge-L_About_GlobalCSS_14_label" value="Uses" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-L_About_GlobalCSS_14">
-                  <mxGeometry x="-0.2" y="10" relative="1" as="geometry">
-                    <mxPoint as="offset"/>
-                  </mxGeometry>
-                </mxCell>
-<mxCell id="edge-L_Contact_GlobalCSS_15" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="Contact" target="GlobalCSS">
-                  <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="edge-L_Contact_GlobalCSS_15_label" value="Uses" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-L_Contact_GlobalCSS_15">
-                  <mxGeometry x="-0.2" y="10" relative="1" as="geometry">
-                    <mxPoint as="offset"/>
-                  </mxGeometry>
-                </mxCell>
-<mxCell id="edge-L_Portfolio_GlobalCSS_16" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="Portfolio" target="GlobalCSS">
-                  <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="edge-L_Portfolio_GlobalCSS_16_label" value="Uses" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-L_Portfolio_GlobalCSS_16">
-                  <mxGeometry x="-0.2" y="10" relative="1" as="geometry">
-                    <mxPoint as="offset"/>
-                  </mxGeometry>
-                </mxCell>
-<mxCell id="edge-L_Services_GlobalCSS_17" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="Services" target="GlobalCSS">
-                  <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="edge-L_Services_GlobalCSS_17_label" value="Uses" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-L_Services_GlobalCSS_17">
-                  <mxGeometry x="-0.2" y="10" relative="1" as="geometry">
-                    <mxPoint as="offset"/>
-                  </mxGeometry>
-                </mxCell>
-<mxCell id="edge-L_Footer_GlobalCSS_18" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="Footer" target="GlobalCSS">
-                  <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="edge-L_Footer_GlobalCSS_18_label" value="Uses" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-L_Footer_GlobalCSS_18">
-                  <mxGeometry x="-0.2" y="10" relative="1" as="geometry">
-                    <mxPoint as="offset"/>
-                  </mxGeometry>
-                </mxCell>
-<mxCell id="edge-L_Nav_Hero_19" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="Nav" target="Hero">
-                  <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="edge-L_Nav_Hero_19_label" value="Links to" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-L_Nav_Hero_19">
-                  <mxGeometry x="-0.2" y="10" relative="1" as="geometry">
-                    <mxPoint as="offset"/>
-                  </mxGeometry>
-                </mxCell>
-<mxCell id="edge-L_Nav_About_20" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="Nav" target="About">
-                  <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="edge-L_Nav_About_20_label" value="Links to" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-L_Nav_About_20">
-                  <mxGeometry x="-0.2" y="10" relative="1" as="geometry">
-                    <mxPoint as="offset"/>
-                  </mxGeometry>
-                </mxCell>
-<mxCell id="edge-L_Nav_Services_21" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="Nav" target="Services">
-                  <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="edge-L_Nav_Services_21_label" value="Links to" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-L_Nav_Services_21">
-                  <mxGeometry x="-0.2" y="10" relative="1" as="geometry">
-                    <mxPoint as="offset"/>
-                  </mxGeometry>
-                </mxCell>
-<mxCell id="edge-L_Nav_Portfolio_22" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="Nav" target="Portfolio">
-                  <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="edge-L_Nav_Portfolio_22_label" value="Links to" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-L_Nav_Portfolio_22">
-                  <mxGeometry x="-0.2" y="10" relative="1" as="geometry">
-                    <mxPoint as="offset"/>
-                  </mxGeometry>
-                </mxCell>
-<mxCell id="edge-L_Nav_Contact_23" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#808080;strokeWidth=2;jumpStyle=arc;jumpSize=10;spacing=15;labelBackgroundColor=white;labelBorderColor=none" edge="1" parent="1" source="Nav" target="Contact">
-                  <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="edge-L_Nav_Contact_23_label" value="Links to" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-L_Nav_Contact_23">
+                <mxCell id="edge-L_WebUI_PythonScripts_5_label" value="May interact with" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge-L_WebUI_PythonScripts_5">
                   <mxGeometry x="-0.2" y="10" relative="1" as="geometry">
                     <mxPoint as="offset"/>
                   </mxGeometry>
