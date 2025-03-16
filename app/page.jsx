@@ -4,6 +4,7 @@ import Navigation from './components/navigation'
 import About from './components/about'
 import Project from './components/projects' 
 import ContactUs from "./components/contactUs";
+import Footer from "./components/footer";
 
 
 const Page = () => {
@@ -19,6 +20,9 @@ const Page = () => {
     </div>
     <div className='w-full h-screen bg-zinc-900 pt-1 flex items-center justify-center '>
       <ContactUs />
+    </div>
+    <div>
+      <Footer />
     </div>
     </div>
   )
