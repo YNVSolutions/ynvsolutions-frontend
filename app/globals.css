@@ -12,3 +12,7 @@ body,html{
     width: 100%;
 }
 
+::selection{
+    color: #c9730b;
+    
+}
