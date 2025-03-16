@@ -4,7 +4,7 @@ import React from 'react'
 const Navigation = () => {
   return (
     <>
-      <div className='navBar w-full flex justify-between items-center fixed z-[999]'>
+      <div className='navBar w-full flex justify-between items-center fixed z-[999] backdrop-blur-xs'>
         <div className='logo'>
           <img src='favicon.ico' className='w-14 h-14 rounded-full ' />
         </div>
