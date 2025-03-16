@@ -5,7 +5,7 @@ const HeroSection = () => {
     <div className='w-full h-screen bg-zinc-900 pt-1 flex items-center justify-center'>
       <div className='w-full px-4 py-8'> 
         <div className='flex flex-col md:flex-row justify-around items-center'>
-          <h1 className='text-3xl font-md leading-relaxed text-center md:text-left mb-8 md:mb-0'>
+          <h1 className='text-3xl backdrop-blur-xs font-md leading-relaxed text-center md:text-left mb-8 md:mb-0'>
             YNV Tech, a division of Yantra Nirman<br />
             Vidhi (OPC) Private Limited, is an innovative<br />
             technology company based in India. Established in<br />
