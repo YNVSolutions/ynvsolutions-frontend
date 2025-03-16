@@ -1,10 +1,10 @@
 "use client"
 import React from 'react'
 import Navigation from './components/navigation'
-import About from './components/about'
-import Project from './components/projects' 
+import About from './components/about' 
 import ContactUs from "./components/contactUs";
-
+import ServiceSection from "./components/serviceSection";
+import Projects from "./components/projects";
 
 const Page = () => {
    
@@ -14,11 +14,17 @@ const Page = () => {
       <Navigation />
       <About />
     </div>
+    <div className='w-full h-screen bg-zinc-900'>
+      <ServiceSection/>
+    </div>
     <div className='w-full h-screen bg-zinc-900/70 pt-1 flex items-center justify-center'>
-      <Project/>
+      <Projects/>
     </div>
     <div className='w-full h-screen bg-zinc-900 pt-1 flex items-center justify-center '>
       <ContactUs />
+    </div>
+    <div className='w-full bg-zinc-900/70 pt-1  '>
+        
     </div>
     </div>
   )
