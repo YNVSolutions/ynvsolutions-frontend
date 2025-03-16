@@ -1,9 +1,10 @@
 "use client"
 import React from 'react'
 import Navigation from './components/navigation'
-import HeroSection from './components/heroSection'
-import About from "./components/about";
+import About from './components/about'
+import Project from './components/projects' 
 import ContactUs from "./components/contactUs";
+
 
 const Page = () => {
    
@@ -11,10 +12,10 @@ const Page = () => {
     <div>
     <div className='w-full h-screen text-white'>
       <Navigation />
-      <HeroSection />
+      <About />
     </div>
     <div className='w-full h-screen bg-zinc-900/70 pt-1 flex items-center justify-center'>
-      <About />
+      <Project/>
     </div>
     <div className='w-full h-screen bg-zinc-900 pt-1 flex items-center justify-center '>
       <ContactUs />
