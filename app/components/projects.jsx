@@ -36,7 +36,6 @@ const Projects = () => {
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_d44PBXJFU95Jxbp0xZTqkP2XJGemmgiQemhn1l_RAedJRFebCVCMZz2YoxFwaffJ-U0&usqp=CAU" alt="Image 15" />
         </div>
 
-
         {/* Row 3 */}
         <div className="col-span-1 row-span-1" style={{ '--r': 3, '--c': 4 }}>
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqZx_g2K2F99ksuxib171hL0hfKx8c8OopjQ&s" alt="Image 5" />
@@ -59,9 +58,9 @@ const Projects = () => {
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_U_Hi1vlmPAmZA7oyMAAtkRZqnxpWqyB0lQ&s" alt="Image 15" />
         </div>
 
-      </div>
+      </div >
 
-    </div>
+    </div >
 
   )
 }
