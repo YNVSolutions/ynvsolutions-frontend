@@ -19,7 +19,7 @@ const ContactUs = () => {
 
     return (
         <>
-            <div className='w-full min-h-screen flex flex-col lg:flex-row items-center justify-center'> 
+            <div className='w-full min-h-screen flex flex-col lg:flex-row items-center justify-center' id = "contactUs"> 
                 <div className='w-full lg:w-[50%] text-white text-4xl sm:text-5xl md:text-6xl font-semibold flex items-center justify-center hidden lg:flex'>
                     <img src='favicon.ico' className='h-48 w-48 sm:h-72 sm:w-72 md:h-96 md:w-96 rounded-lg ' alt="Logo" /> 
                 </div>
