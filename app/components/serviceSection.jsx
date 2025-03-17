@@ -9,7 +9,7 @@ const ServiceSection = () => {
         <motion.h1
         initial={{x:0}} 
         animate={{x:"-100%"}}
-        transition={{ease:"linear",repeat:Infinity,duration:30}}
+        transition={{ease:"linear",repeat:Infinity,duration:70}}
         className='text-[10vh] md:text-[15vh] lg:text-[25vh] leading-none font-bold'>
           YNV Tech Delivers Scalable, Efficient, And Intelligent Digital Solutions, Including AI Automation, Mobile Management, And App Development, To Drive Global Business Growth Through Innovation. YNV Tech Delivers Scalable, Efficient, And Intelligent Digital Solutions, Including AI Automation, Mobile Management, And App Development, To Drive Global Business Growth Through Innovation.
         </motion.h1>
