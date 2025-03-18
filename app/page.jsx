@@ -19,7 +19,11 @@ const Page = () => {
         <Navigation />
         <About />
       </div>
+
+      <div className='w-full h-[150vh] bg-zinc-900'>
+
       <div className='w-full h-screen bg-zinc-900'>
+
         <ServiceSection />
       </div>
       <div className='w-full h-screen bg-zinc-900/70 pt-1 flex items-center justify-center'>
@@ -35,6 +39,7 @@ const Page = () => {
 
         </div>
       </div>
+    </div>
     </div>
   )
 }
