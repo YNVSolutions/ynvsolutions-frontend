@@ -2,7 +2,7 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    <div className='z-[-999] absolute  w-full h-full bg-zinc-700'>
+    <div className='z-[-999] absolute  w-full h-full bg-zinc-700' id = "projects">
       <style jsx>{`
         .grid div {
           grid-row: var(--r);
