@@ -13,7 +13,7 @@ const About = () => {
             Mobile Device Management (MDM), and mobile &<br />
             web application development.
           </h1>
-          <div className='hidden md:block'>
+          <div className='hidden md:block animate-float'>
             <img src='favicon.ico' alt='logo' className='w-40 h-40 md:w-80 md:h-80 mx-auto' />
           </div>
         </div>
