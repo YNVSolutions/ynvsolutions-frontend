@@ -92,8 +92,3 @@ This project uses the following key libraries:
 
     Navigate to `http://localhost:3000` to view the application.
 
-**Notes:**
-
-* Ensure you have Node.js and npm (or yarn/pnpm) installed on your system.
-* If you encounter any issues during installation or running the application, please refer to the official documentation for Next.js and Tailwind CSS.
-* Feel free to contribute to this project by submitting pull requests or reporting issues.
