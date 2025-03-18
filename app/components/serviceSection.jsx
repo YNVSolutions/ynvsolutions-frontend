@@ -4,7 +4,7 @@ import React from 'react'
 
 const ServiceSection = () => {
   return (
-    <div className='w-full h-[50vh] md:h-[30vh] lg:h-[20vw] py-10 bg-zinc-800 text-white rounded-tl-3xl rounded-tr-3xl'>
+    <div className='w-full h-[50vh] md:h-[30vh] lg:h-[20vw] py-10 bg-zinc-800 text-white rounded-tl-3xl rounded-tr-3xl' id = "services">
       <div className='border-b-2 border-t-2 border-zinc-500 flex whitespace-nowrap overflow-hidden'>
         <motion.h1
         initial={{x:0}} 
