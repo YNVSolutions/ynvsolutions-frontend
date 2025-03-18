@@ -22,7 +22,7 @@ const Page = () => {
 
       <div className='w-full h-[150vh] bg-zinc-900'>
 
-      <div className='w-full h-screen bg-zinc-900'>
+      <div className='w-full  bg-zinc-900'>
 
         <ServiceSection />
       </div>
