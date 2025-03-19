@@ -8,7 +8,7 @@ const About = () => {
     >
       <div className="w-full min-h-[80vh] rounded-2xl bounding-box bg-gray-400 flex items-center justify-around shadow-2xl">
         <div className="flex flex-col justify-around min-h-[70vh]">
-          <div className="hidden md:block">
+          <div className="hidden md:block shadow-2xl animate-float">
             <img
               src="favicon.ico"
               alt="logo"
