@@ -38,7 +38,7 @@ const Navigation = () => {
         </button>
 
         {isOpen && (
-        <div className="absolute top-16 left-0 w-full bg-zinc-600 p-4 shadow-lg flex flex-col items-center gap-5 md:hidden rounded-b-3xl">
+        <div className="absolute top-18 left-0 w-full bg-zinc-600 p-4 shadow-lg flex flex-col items-center gap-5 md:hidden rounded-b-3xl">
           {[
             { name: "Home", link: "#home" },
             { name: "About Us", link: "#about" },
