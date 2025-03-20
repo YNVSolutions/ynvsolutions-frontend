@@ -2,7 +2,7 @@ import React from 'react';
 
 const Projects = () => {
   return (
-    <div className='z-[-999] absolute w-full h-full bg-zinc-700 text-white p-10' id='projects'>
+    <div className='z-[-999] absolute w-full h-full bg-black text-white p-10' id='projects'>
       <style jsx>{`
         .grid div {
           grid-row: var(--r);
@@ -18,9 +18,17 @@ const Projects = () => {
           flex-direction: column;
           align-items: center;
           text-align: center;
-          background: rgba(0, 0, 0, 0.6);
-          padding: 10px;
-          border-radius: 8px;
+          background: rgba(0, 0, 0, 0.8); /* Increased opacity for readability */
+          padding: 15px;
+          border-radius: 10px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Added shadow for contrast */
+        }
+        .project-card p {
+          margin: 10px 0;
+        }
+        .project-card strong {
+          font-size: 1.2rem;
+          color: #f5a623; /* Slightly brighter color for headings */
         }
       `}</style>
       <div className='grid grid-cols-8 grid-rows-4 gap-4'>
