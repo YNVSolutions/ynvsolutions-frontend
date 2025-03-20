@@ -20,7 +20,7 @@ const Footer = () => {
           
 
           <div className="links">
-            <p className="heading text-2xl">Links</p>
+            <p className="heading text-2xl text">Links</p>
             <ul className="text-gray-400">
               <li>
                 <a href="#aboutUs" className="hover:text-white transition-colors">
@@ -46,7 +46,7 @@ const Footer = () => {
           </div>
 
           <div className="links">
-            <p className="heading text-2xl">Follow Us</p>
+            <p className="heading text-2xl text">Follow Us</p>
             <ul className="text-gray-400">
               <li>
                 <a href="#aboutUs" className="hover:text-white transition-colors">
@@ -72,7 +72,7 @@ const Footer = () => {
           </div>
 
           <div className="links">
-            <p className="heading text-2xl">Reach Us</p>
+            <p className="heading text-2xl text">Reach Us</p>
             <ul className="text-gray-400">
               <li>
                 <a
