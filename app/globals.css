@@ -11,6 +11,12 @@ body,html{
     width: 100%;
     scroll-behavior: smooth;
 }
+.text {
+  background-image: linear-gradient(to right, #ec4899, #3b82f6, #ec4899);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 
 
 ::selection{
