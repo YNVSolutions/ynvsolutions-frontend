@@ -6,7 +6,7 @@ const Projects = () => {
       <style jsx>{`
         .projects-container {
           display: flex;
-          justify-content: space-around;
+          justify-content: space-between;
           flex-wrap: wrap;
           padding: 20px;
           background-color: #121212;
@@ -14,8 +14,8 @@ const Projects = () => {
         .project-card {
           background-color: #1e1e1e;
           border-radius: 12px;
-          width: 300px;
-          margin: 20px;
+          width: 32%;
+          margin: 10px 0;
           overflow: hidden;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
           transition: transform 0.3s ease-in-out;
@@ -40,6 +40,16 @@ const Projects = () => {
           font-size: 1rem;
           color: #e0e0e0;
           line-height: 1.6;
+        }
+        @media (max-width: 768px) {
+          .project-card {
+            width: 48%;
+          }
+        }
+        @media (max-width: 480px) {
+          .project-card {
+            width: 100%;
+          }
         }
       `}</style>
       <div className='project-card'>
