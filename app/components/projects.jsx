@@ -25,8 +25,9 @@ const Projects = () => {
         }
         .project-image {
           width: 100%;
-          height: 200px;
-          object-fit: cover;
+          height: auto;
+          max-height: 200px;
+          object-fit: contain;
         }
         .project-content {
           padding: 20px;
@@ -54,7 +55,7 @@ const Projects = () => {
       `}</style>
       <div className='project-card'>
         <img
-          src='https://arx.vision/sample-image.jpg'
+          src='/ARX_vision.png'
           alt='ARX Vision'
           className='project-image'
         />
@@ -73,7 +74,7 @@ const Projects = () => {
       </div>
       <div className='project-card'>
         <img
-          src='https://ourmedia.co.uk/sample-image.jpg'
+          src='/Our_media.png'
           alt='Our Media'
           className='project-image'
         />
@@ -92,7 +93,7 @@ const Projects = () => {
       </div>
       <div className='project-card'>
         <img
-          src='https://donadonations.com/sample-image.jpg'
+          src='/dona.png'
           alt='Dona Donations'
           className='project-image'
         />
