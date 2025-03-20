@@ -58,12 +58,6 @@ This project uses the following key libraries:
     npm install
     ```
 
-    Using yarn:
-
-    ```bash
-    yarn install
-    ```
-
     Using pnpm:
 
     ```bash
@@ -78,12 +72,6 @@ This project uses the following key libraries:
 
     ```bash
     npm run dev
-    ```
-
-    Using yarn:
-
-    ```bash
-    yarn dev
     ```
 
     Using pnpm:
