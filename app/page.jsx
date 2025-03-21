@@ -23,16 +23,16 @@ const Page = () => {
         <div className='w-full  bg-black'>
           <Marque />
         </div>
-        <div className='w-full  bg-black pt-7 pb-10'>
-          <Clients/>
-        </div>
         <div className='w-full  bg-black pt-10'>
           <ServiceSection />
         </div>
-        <div className='w-full h-screen bg-black pt-1 flex items-center justify-center'>
+        <div className='w-full  bg-black pb-10 pt-20'>
+          <Clients/>
+        </div>
+        <div className='w-full h-screen bg-black'>
           <Projects />
         </div>
-        <div className='w-full h-screen bg-black pt-1 flex items-center justify-center '>
+        <div className='w-full bg-black pt-40 flex items-center justify-center '>
           <ContactUs />
         </div>
         <div className='w-full bg-black pt-1  '>
