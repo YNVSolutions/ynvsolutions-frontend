@@ -4,8 +4,6 @@
     box-sizing: border-box;
     font-family: 'Big Shoulders Stencil';
 }
-
-
 body,html{
     height: 100%;
     width: 100%;
@@ -17,10 +15,14 @@ body,html{
   background-clip: text;
   color: transparent;
 }
+.border{
+  border-width: 2px;
+  border-color: rgb(236 72 153)
+}
 
 
 ::selection{
-    color: #c9730b;
+    color:rgb(169, 33, 142);
     
 }
 @keyframes float {
