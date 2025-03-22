@@ -2,9 +2,13 @@
 
 # Yantra Nirmaan Vidhi Tech
 
+## View production build : [Vercel](https://conversation-club.vercel.app/)
+
 ## About YNV Tech
 
 YNV Tech, a division of Yantra Nirman Vidhi (OPC) Private Limited, is an innovative technology company based in India. Established in 2021, we specialize in cutting-edge AI solutions, Mobile Device Management (MDM), and mobile & web application development.
+
+This website serves as a landing page of YNV tech.
 
 ## Tech Stack
 
@@ -14,19 +18,19 @@ YNV Tech, a division of Yantra Nirman Vidhi (OPC) Private Limited, is an innovat
 ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-%231572B6.svg?style=for-the-badge&logo=tailwindcss&logoColor=white") 
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-%231572B6.svg?style=for-the-badge&logo=tailwindcss&logoColor=white) 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
 ## Libraries
 
 This project uses the following key libraries:
 
-* **react** 
-* **next** 
-* **tailwind css** 
-* **framer motion**
-* **tostify**
-* **react icons**
+* **React.js** 
+* **Next.js** 
+* **TailwindCSS** 
+* **Framer-motion**
+* **Toastify**
+* **React icons**
 
 
 ## Author
@@ -54,12 +58,6 @@ This project uses the following key libraries:
     npm install
     ```
 
-    Using yarn:
-
-    ```bash
-    yarn install
-    ```
-
     Using pnpm:
 
     ```bash
@@ -76,12 +74,6 @@ This project uses the following key libraries:
     npm run dev
     ```
 
-    Using yarn:
-
-    ```bash
-    yarn dev
-    ```
-
     Using pnpm:
 
     ```bash
@@ -92,3 +84,17 @@ This project uses the following key libraries:
 
     Navigate to `http://localhost:3000` to view the application.
 
+## Install TailwindCSS (v4.0)
+
+1. Go to https://tailwindcss.com/
+2. Get started
+3. Under framework guides, select Next.js
+4. Follow the steps mentioned there to start using TailwindCSS 
+
+## Recommendations 
+
+1. You may use the extension Draw.io Integration on VScode to view the .drawio file.
+2. Prettier formatter recommended for code formatting.
+3. Use Tailwind CSS IntelliSense extension for Tailwind suggestions while coding.
+4. The project is using the latest versions of all the libraries mentioned above.
+5. Create and/or assign an issue to yourself before working on any feature.
