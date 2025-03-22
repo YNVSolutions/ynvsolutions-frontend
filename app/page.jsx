@@ -29,7 +29,7 @@ const Page = () => {
         <div className='w-full  bg-black pb-10 pt-20'>
           <Clients/>
         </div>
-        <div className='w-full h-screen bg-black'>
+        <div className='w-full bg-black'>
           <Projects />
         </div>
         <div className='w-full bg-black pt-40 flex items-center justify-center '>
