@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Projects = () => {
+const projects = () => {
   return (
     <div className='projects-container' id='projects'>
       <style jsx>{`
