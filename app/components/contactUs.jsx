@@ -32,14 +32,24 @@ const ContactUs = () => {
             <p className="text-gray-300 text-xl">fill the form and we will reach out to you.</p>
           </div>
           <div className="flex justify-around h-2/6">
-            <div className="bg-gray-600 w-full h-full flex-1 p-8 m-2 rounded-2xl">Need an app for your website?</div>
-            <div className="bg-gray-600 w-full h-full flex-1 p-8 m-2 rounded-2xl">Are you lagging in the AI race?</div>
-            <div className="bg-gray-600 w-full h-full flex-1 p-8 m-2 rounded-2xl">Custom Android kiosks that actually survive 24/7 use?</div>
+            <div className="bg-gray-950 w-full h-full flex-1 p-6 pt-8 m-2 rounded-2xl">
+              <p className="text-gray-100 text-lg">Need an app for your website?</p>
+              <p className="text-gray-400 text-center mt-8">We got you covered!</p>
+
+            </div>
+            <div className="bg-gray-950 w-full h-full flex-1 p-6 pt-8 m-2 rounded-2xl">
+              <p className="text-gray-100 text-lg">Are you lagging in the AI race?</p>
+              <p className="text-gray-400 text-center mt-8">Let's boost you!</p>
+            </div>
+            <div className="bg-gray-950 w-full h-full flex-1 p-6 pt-8 m-2 rounded-2xl">
+              <p className="text-gray-100 text-lg">Custom Android kiosks that survive 24/7 use?</p>
+              <p className="text-gray-400 text-center mt-8">Just name it, we'll figure!</p>
+            </div>
           </div>
         </div>
 
         <div className="bg-transparent w-full h-full flex-1 p-8 flex items-center justify-center">
-          <div className="bg-gray-600 w-4/5 h-6/7 p-8 rounded-2xl shadow-2xl shadow-blue-900/30">
+          <div className="bg-gray-700 w-4/5 h-6/7 p-8 rounded-2xl shadow-2xl shadow-blue-900/50">
             <p className="text-white text-5xl">Get in touch</p>
             <p className="text-gray-100 text-md mb-6 ms-1">
               Let’s discuss how we can help
@@ -48,7 +58,7 @@ const ContactUs = () => {
               <div className="flex w-full">
                 <input
                   placeholder="First Name"
-                  className="w-full p-3 m-1 bg-gray-800 border-none text-white border border-gray-600 rounded-lg 
+                  className="w-full p-3 m-1 bg-gray-900 focus:bg-gray-950 border-none text-white border border-gray-600 rounded-lg 
                   focus:outline-none focus:ring-2 focus:ring-blue-400"
                   type="text"
                   name=""
@@ -58,7 +68,7 @@ const ContactUs = () => {
                 <input
                   type="text"
                   placeholder="Last Name"
-                  className="w-full m-1 p-3 border-none bg-gray-800 text-white border border-gray-600 rounded-lg 
+                  className="w-full m-1 p-3 border-none bg-gray-900 focus:bg-gray-950 text-white border border-gray-600 rounded-lg 
                   focus:outline-none focus:ring-2 focus:ring-blue-400"
                 />
               </div>
@@ -69,7 +79,7 @@ const ContactUs = () => {
                   id=""
                   required
                   placeholder="Email address"
-                  className="w-full m-1 p-3 border-none bg-gray-800 text-white border border-gray-600 rounded-lg 
+                  className="w-full m-1 p-3 border-none bg-gray-900 focus:bg-gray-950 text-white border border-gray-600 rounded-lg 
                   focus:outline-none focus:ring-2 focus:ring-blue-400"
                 />
               </div>
@@ -77,8 +87,8 @@ const ContactUs = () => {
                 <textarea
                   placeholder="How can we help you?"
                   rows={5}
-                  className="w-full m-1 p-3 bg-gray-800 border-none text-white border border-gray-600 rounded-lg 
-                  focus:outline-none focus:ring-2 focus:ring-blue-400 resize-none"
+                  className="w-full m-1 p-3 bg-gray-900 border-none text-white border border-gray-600 rounded-lg 
+                  focus:outline-none focus:ring-2 focus:ring-blue-400 focus:bg-gray-950 resize-none"
                 ></textarea>
               </div>
               <div className="w-full flex justify-center mt-2">
