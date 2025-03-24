@@ -8,7 +8,7 @@ const ContactUs = () => {
   const notify = () =>
     toast.success("Complete !", {
       position: "top-center",
-      autoClose: 5000,
+      autoClose: 3000,
       hideProgressBar: false,
       closeOnClick: false,
       pauseOnHover: true,
@@ -18,6 +18,11 @@ const ContactUs = () => {
       transition: Bounce,
     });
 
+  const handleSubmit = (e) => {
+      e.preventDefault();
+      notify();
+      // TO-DO : have to add the submit logic here
+    };
   return (
     <>
       <div
@@ -54,7 +59,7 @@ const ContactUs = () => {
             <p className="text-gray-100 text-md mb-6 ms-1">
               Let’s discuss how we can help
             </p>
-            <form action="">
+            <form onSubmit={handleSubmit}>
               <div className="flex w-full">
                 <input
                   placeholder="First Name"
@@ -93,7 +98,7 @@ const ContactUs = () => {
               </div>
               <div className="w-full flex justify-center mt-2">
                 <button
-                  onClick={notify}
+                  type="submit"
                   className="w-full m-1 p-[2px] rounded-lg group relative bg-gradient-to-r from-pink-500 via-blue-500
                    to-pink-500  bg-[length:200%_auto] hover:bg-[position:100%_center] transition-all duration-500 ease-out 
                    overflow-hidden">
@@ -109,6 +114,7 @@ const ContactUs = () => {
             </form>
           </div>
         </div>
+        <ToastContainer />
       </div>
     </>
   );
