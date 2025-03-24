@@ -84,6 +84,41 @@ This project uses the following key libraries:
 
     Navigate to `http://localhost:3000` to view the application.
 
+
+## Visual Studio Code 
+
+You would need to have the latest version of [VS Code](https://code.visualstudio.com) and VS Code [Chrome Debugger Extension](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) installed.
+
+Then add the block below to your `launch.json` file and put it inside the `.vscode` folder in your app’s root directory.
+
+```json
+{
+  "version": "0.2.0",
+  "configurations": [{
+    "name": "Chrome",
+    "type": "chrome",
+    "request": "launch",
+    "url": "http://localhost:3000",
+    "webRoot": "${workspaceRoot}/src",
+    "sourceMapPathOverrides": {
+      "webpack:///src/*": "${webRoot}/*"
+    }
+  }]
+}
+```
+>Note: the URL may be different if you've made adjustments via the [HOST or PORT environment variables](#advanced-configuration).
+
+Start your app by running `npm start`, and start debugging in VS Code by pressing `F5` or by clicking the green debug icon. You can now write code, set breakpoints, make changes to the code, and debug your newly modified code—all from your editor.
+
+Having problems with VS Code Debugging? Please see their [troubleshooting guide](https://github.com/Microsoft/vscode-chrome-debug/blob/master/README.md#troubleshooting).
+
+
+## Supported Browsers
+
+By default, the generated project usee the latest version of React.
+
+You can refer [to the React documentation](https://react.dev/learn) for more information about supported browsers.
+
 ## Install TailwindCSS (v4.0)
 
 1. Go to https://tailwindcss.com/
