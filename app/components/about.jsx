@@ -1,9 +1,10 @@
 import React from "react";
 
 const About = () => {
-  return (
+  return (<>
+  
     <div
-      className=" w-full min-h-screen bg-zinc-900 pt-1 flex items-center justify-center"
+      className=" w-full min-h-screen bg-transparent pt-1 flex items-center justify-center"
       id="about"
     >
       <div className=" m-4 md:m-6 mt-20 md:mt-16 w-full min-h-[90vh] md:min-h-[80vh] rounded-2xl bounding-box bg-gray-400 flex flex-col md:flex-row items-center justify-around shadow-2xl">
@@ -58,6 +59,7 @@ const About = () => {
         }
       `}</style>
     </div>
+    </>
   );
 };
 
