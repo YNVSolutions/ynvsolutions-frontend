@@ -6,7 +6,6 @@ import ContactUs from "./components/contactUs";
 import Clients from "./components/clients";
 import ServiceSection from "./components/serviceSection";
 import Projects from "./components/projects";
-import Marque from "./components/marque";
 import Footer from "./components/footer";
 
 
@@ -20,9 +19,6 @@ const Page = () => {
         <About />
       </div>
       <div className='w-full h-[150vh] bg-black'>
-        <div className='w-full  bg-black'>
-          <Marque />
-        </div>
         <div className='w-full  bg-black pt-10'>
           <ServiceSection />
         </div>

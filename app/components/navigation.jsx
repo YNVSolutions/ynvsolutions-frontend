@@ -7,7 +7,7 @@ const Navigation = () => {
 
   return (
     <>
-<div className='navBar shadow-lg bg-gradient-to-r from-[#ec4899]/35 via-[#8b5cf6]/35 to-[#3b82f6]/35 w-full flex justify-between items-center fixed z-[999] bg-white/70 backdrop-blur-sm p-[10px] rounded-md'>        <div className='logo'>
+<div className='navBar shadow-lg bg-gradient-to-r from-[#ec4899]/35 via-[#8b5cf6]/35 to-[#3b82f6]/35 w-full flex justify-between items-center fixed z-[999] bg-white/70 backdrop-blur-md p-[10px] rounded-md'>        <div className='logo'>
           <img src='favicon.ico' className='w-14 h-14 rounded-full border-2 border-gray-600' />
         </div>
         <div className='hidden md:flex gap-10 '>
