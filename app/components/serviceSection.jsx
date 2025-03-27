@@ -9,12 +9,21 @@ const ServiceSection = () => {
           <h1 className='mt-8 font-bold text-4xl md:text-6xl lg:text-8xl'>Services<span className='text text-2xl md:text-4xl lg:text-6xl'> We Provide You</span></h1>
         </div>
 
-        
+
         <div className='grid grid-cols-1 md:grid-cols-2 gap-6 m-auto text-zinc-300 p-5'>
           <div className='h-[40vh] md:h-[50vh] lg:h-[57vh] w-full bg-zinc-900 rounded-lg animate-float border-t-4 border-pink-500 cursor-pointer'>
             <h1 className='text-center p-4 text text-2xl md:text-3xl lg:text-4xl font-semibold'>Android & IOS App Development</h1>
-            <p className='text-center text-sm md:text-lg lg:text-xl p-2'>We craft innovative mobile applications for Android and iOS, focusing on efficiency and security. Our process includes design, development, deployment, testing, and maintenance. Explore our portfolio and benefit from our use of cutting-edge technologies.</p>
-            <img src='https://staging.spwebconnect.com/img/services/mobile_application/mobile_app_design/SpWebconnect_mobile_app_development.gif' className='overflow-hidden h-[15vh] md:h-[20vh] lg:h-[25vh] w-[80%] md:w-[60%] lg:w-[25vw] m-auto rounded-2xl' />
+            <p className='text-center text-sm md:text-lg lg:text-xl p-2'>We craft innovative mobile applications for Android and iOS, focusing on efficiency and security. Our process includes design, development, deployment, testing, and maintenance. Explore our portfolio and benefit from our use of cutting-edge technologies.
+            </p>
+            <div className='flex justify-center items-center text-md'>
+              <ul className='p-3'>
+                <li>What We Offer : </li>
+                <li>Cross-Platform Excellence</li>
+                <li>End-to-End Development</li>
+                <li>Utilizing Modern Tech</li>
+              </ul>
+              <img src='https://staging.spwebconnect.com/img/services/mobile_application/mobile_app_design/SpWebconnect_mobile_app_development.gif' className='overflow-hidden h-[15vh] md:h-[20vh] lg:h-[25vh] w-[80%] md:w-[60%] lg:w-[25vw] m-auto rounded-2xl' />
+            </div>
           </div>
 
 
