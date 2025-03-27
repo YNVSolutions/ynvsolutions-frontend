@@ -45,11 +45,6 @@ const ServiceSection = () => {
             <p className='text-center text-xs sm:text-sm md:text-lg lg:text-xl pt-2 pl-2 pr-2'>Our AI solution enhances website/app performance through automated decision-making and machine learning. We analyze data to provide effective insights, mimicking human intelligence for chatbots, recommendations, and fraud detection.</p>
             <div className='flex flex-col sm:flex-row justify-center items-center'>
               <ul className='p-3'>
-          <div className='h-[40vh] md:h-[50vh] lg:h-[57vh] w-full bg-zinc-900 rounded-lg animate-float border-t-4 border-blue-500 cursor-pointer'>
-            <h1 className='text-center p-4 text text-2xl md:text-3xl lg:text-4xl font-semibold'>AI Solution</h1>
-            <p className='text-center text-sm md:text-lg lg:text-xl pt-2 pl-2 pr-2'>Our AI solution enhances website/app performance through automated decision-making and machine learning. We analyze data to provide effective insights, mimicking human intelligence for chatbots, recommendations, and fraud detection.</p>
-            <div className='flex justify-center items-center'>
-              <ul className='p-3'>
                 <li className='text-lg font-semibold pb-5'>What We Offer :</li>
                 <li>1. Automated Decisioning</li>
                 <li>2. Machine Learning Core</li>
@@ -59,7 +54,6 @@ const ServiceSection = () => {
               <img src='https://whatmaction.com/images/services-images/ai-solutions-banner.svg' className='h-[15vh] md:h-[20vh] lg:h-[25vh] w-[80%] md:w-[60%] lg:w-[25vw] m-auto rounded-2xl' />
             </div>
           </div>
-
 
           <div className='h-[40vh] md:h-[50vh] lg:h-[57vh] w-full bg-zinc-900 rounded-lg animate-float border-t-4 border-pink-500 cursor-pointer'>
             <h1 className='text-center p-4 text text-2xl md:text-3xl lg:text-4xl font-semibold'>Web Development</h1>
