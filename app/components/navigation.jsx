@@ -29,7 +29,9 @@ const Navigation = () => {
         </div>
 
         
-       
+        <button className="md:hidden text-3xl" onClick={() => setIsOpen(!isOpen)}>
+          ☰
+        </button>
       </div>
 
       
@@ -50,6 +52,7 @@ const Navigation = () => {
         </a>
       </div>
 
+      {/* Overlay to close drawer when clicking outside */}
       {isOpen && (
         <div className="fixed top-0 left-0 w-full h-full bg-black/50 z-[999]" onClick={() => setIsOpen(false)}></div>
       )}
