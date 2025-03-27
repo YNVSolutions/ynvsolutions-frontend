@@ -106,7 +106,7 @@ const projects = () => {
           <img
             src='/dona.png'
             alt='Dona Donations'
-            className='project-image'
+            className='h-[200px] w-full pr-4 pl-4'
           />
           <div className='project-content'>
             <p className='project-title text'>Dona Donations</p>
