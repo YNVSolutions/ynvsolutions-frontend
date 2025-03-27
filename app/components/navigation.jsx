@@ -35,7 +35,7 @@ const Navigation = () => {
       </div>
 
       
-      <div className={`fixed top-0 right-0 w-64 h-full shadow-lg bg-black/60 backdrop-blur-md p-[10px] rounded-md transform ${isOpen ? "translate-x-" : "translate-x-full"} transition-transform duration-300 ease-in-out z-[1000] p-5 flex flex-col gap-5`}>
+      <div className={`fixed top-0 right-0 w-58 h-full shadow-lg bg-black/60 backdrop-blur-md p-[20px] rounded-md transform ${isOpen ? "translate-x-" : "translate-x-full"} transition-transform duration-300 ease-in-out z-[1000] p-5 flex flex-col gap-5`}>
         <button className="text-white text-3xl self-end" onClick={() => setIsOpen(false)}>✕</button>
         {[
           { name: "Home", link: "#home" },
