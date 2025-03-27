@@ -18,7 +18,7 @@ const Clients = () => {
                 height={64}
                 width={64}
                 alt='ARX VISION'
-                className=' border-2 border-white p-2 h-[20vh] w-[20vw]'
+                className=' border-2 border-white p-2 h-[20vh] w-[20vw] hover:w-[22vw] hover:h-[22vh] transition-all duration-300'
               />
             </div>
             <div>
@@ -27,7 +27,7 @@ const Clients = () => {
                 height={64}
                 width={64}
                 alt='DONA'
-                className=' border-2 border-white p-2 h-[20vh] w-[20vw]'
+                className=' border-2 border-white p-2 h-[20vh] w-[20vw] hover:w-[22vw] hover:h-[22vh] transition-all duration-300'
               />
             </div>
           </div>
@@ -37,7 +37,7 @@ const Clients = () => {
               height={64}
               width={64}
               alt='OUR MEDIA'
-              className=' border-2 border-white p-2 h-[20vh] w-[20vw]'
+              className=' border-2 border-white p-2 h-[20vh] w-[20vw] hover:w-[22vw] hover:h-[22vh] transition-all duration-300'
             />
           </div>
         </div>
