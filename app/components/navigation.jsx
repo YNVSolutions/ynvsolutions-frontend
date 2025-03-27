@@ -11,7 +11,7 @@ const Navigation = () => {
           <img src='favicon.ico' className='w-14 h-14 rounded-full border-2 border-gray-600' />
         </div>
 
-        {/* Desktop Navigation */}
+        
         <div className='hidden md:flex gap-10 '>
           {[
             { name: "Home", link: "#home" },
@@ -29,12 +29,10 @@ const Navigation = () => {
         </div>
 
         
-        <button className="md:hidden text-3xl" onClick={() => setIsOpen(!isOpen)}>
-          ☰
-        </button>
+       
       </div>
 
-      {/* Sidebar Navigation */}
+      
       <div className={`fixed top-0 right-0 w-64 h-full shadow-lg bg-black/60 backdrop-blur-md p-[10px] rounded-md transform ${isOpen ? "translate-x-" : "translate-x-full"} transition-transform duration-300 ease-in-out z-[1000] p-5 flex flex-col gap-5`}>
         <button className="text-white text-3xl self-end" onClick={() => setIsOpen(false)}>✕</button>
         {[
@@ -52,7 +50,6 @@ const Navigation = () => {
         </a>
       </div>
 
-      {/* Overlay to close drawer when clicking outside */}
       {isOpen && (
         <div className="fixed top-0 left-0 w-full h-full bg-black/50 z-[999]" onClick={() => setIsOpen(false)}></div>
       )}
