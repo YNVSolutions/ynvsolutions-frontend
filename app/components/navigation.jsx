@@ -27,6 +27,9 @@ const Navigation = () => {
           <button className=''>
           <a href="#contactUs" className='p-2 text-xl font-medium capitalize bg-white hover:text-gray-800 text-black border-2 rounded-xl shadow-2xl border-gray-600'>Contact Us</a>
           </button>
+          <button className="text-3xl" onClick={() => setIsOpen(!isOpen)}>
+        ☰
+        </button>
 
           
 
