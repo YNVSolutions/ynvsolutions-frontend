@@ -125,6 +125,41 @@ const Footer = () => {
             margin-bottom: 10px;
             padding: 0 20px 0 20px;
           }
+
+          @media (max-width: 768px) {
+            .footer {
+              padding-top: 40px;
+              padding-bottom: 20px;
+            }
+
+            .theContainer {
+              grid-template-columns: 1fr 1fr;
+              gap: 16px;
+            }
+
+            .heading {
+              font-size: 1.5rem;
+            }
+
+            li {
+              margin: 2px 0;
+            }
+          }
+
+          @media (max-width: 480px) {
+            .theContainer {
+              grid-template-columns: 1fr;
+            }
+
+            .heading {
+              font-size: 1.25rem;
+              text-align: center;
+            }
+
+            .footer {
+              text-align: center;
+            }
+          }
         `}
       </style>
     </>
