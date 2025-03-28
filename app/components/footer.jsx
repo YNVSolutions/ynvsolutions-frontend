@@ -42,7 +42,34 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-          </div>
+
+            <div className="links">
+              <p className="heading text-2xl">Follow Us</p>
+              <ul className="text-gray-400 space-y-2">
+                <li>
+                  <a href="#aboutUs" className="hover:text-white transition-colors">
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a href="#aboutUs" className="hover:text-white transition-colors">
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a href="#services" className="hover:text-white transition-colors">
+                    LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <a href="#projects" className="hover:text-white transition-colors">
+                    X (Twitter)
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+           </div>
         </div>
       </footer>
 
