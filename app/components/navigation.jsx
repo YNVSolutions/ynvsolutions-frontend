@@ -19,7 +19,7 @@ const Navigation = () => {
             { name: "Services", link: "#services" },
             { name: "Projects", link: "#projects" }
           ].map((item, index) => (
-            <a key={index} href={item.link} className="text-xl font-medium capitalize hover:text-gray-800 text-black drop-shadow-md">
+            <a key={index} href={item.link} className="text-xl font-medium capitalize hover:bg-gray-200/50 hover:text-gray-900 rounded-xl p-2 px-3 text-black drop-shadow-md transition-all duration-200 ease-in-out">
               {item.name}
             </a>
           ))}
@@ -43,11 +43,11 @@ const Navigation = () => {
           { name: "Services", link: "#services" },
           { name: "Projects", link: "#projects" }
         ].map((item, index) => (
-          <a key={index} href={item.link} className="text-xl font-medium capitalize text-gray-200 hover:text-white">
+          <a key={index} href={item.link} className="text-xl font-medium capitalize text-gray-200 hover:text-white hover:bg-gray-300/20 p-2 rounded-md">
             {item.name}
           </a>
         ))}
-        <a href="#contactUs" className="p-2 text-xl font-medium capitalize bg-white text-gray-800 hover:text-black border-2 rounded-xl shadow-2xl border-gray-600">
+        <a href="#contactUs" className="p-2 text-xl font-medium capitalize  bg-white text-gray-800 hover:text-black border-2 rounded-xl shadow-2xl border-gray-600">
           Contact Us
         </a>
       </div>
