@@ -1,66 +1,33 @@
-import React from "react";
+import React from 'react'
 
 const About = () => {
-  return (<>
-  
-    <div
-      className=" w-full min-h-screen bg-transparent pt-1 flex items-center justify-center"
-      id="about"
-    >
-      <div className=" m-4 md:m-6 mt-20 md:mt-16 w-full min-h-[90vh] md:min-h-[80vh] rounded-2xl bounding-box bg-gray-400 flex flex-col md:flex-row items-center justify-around shadow-2xl">
-        <div className="flex flex-col justify-around min-h-auto md:min-h-[70vh] space-y-6 md:space-y-6">
-          <div className="animate-float">
-            <img
-              src="favicon.ico"
-              alt="logo"
-              className="w-32 h-32 md:w-64 md:h-64 mx-auto shadow"
-            />
+  return (
+    <>
+      <div
+        className="bg-cover bg-center h-screen w-full pt-5"
+        style={{ backgroundImage: "url('/back.png')" }}
+      >
+        <div className='text-white absolute top-[30vh] left-[10vw] '>
+          <h1 className='text-7xl font-bold '>YNV Tech</h1>
+          <div className='w-[30vw] pt-4'>
+            <p className='text-xl font-lg'>YNV Tech, a division of Yantra Nirman
+              Vidhi (OPC) Private Limited, is an innovative
+              technology company based in India. Established in
+              2021, we specialize in cutting-edge AI solutions,
+              Mobile Device Management (MDM), and mobile &
+              web application development.</p>
           </div>
-          
-            <h2 className="text-xl font-medium italic text-black text-center">
-              "Be a part of our growing tech community. <br />
-              Let’s create something incredible together.”
-            </h2>
-            <button className="">
-              <a
-                href="#contactUs"
-                className="px-6 py-3 text-xl font-medium capitalize bg-white text-gray-800 hover:text-black border-2 rounded-xl shadow-2xl border-gray-600"
-              >
-                Connect with us
-              </a>
+          <div className='pt-4'>
+            <button className='text-xl font-semibold border-2 border-white p-2 px-7 rounded-xl shadow-lg bg-gradient-to-r from-[#ec4899]/35 via-[#8b5cf6]/35 to-[#3b82f6]/35 hover:scale-105 hover:bg-gradient-to-r hover:from-[#ec4899]/60 hover:via-[#8b5cf6]/60 hover:to-[#3b82f6]/60 transition-all duration-300 ease-in-out'>
+              Know More
             </button>
-          
+
+          </div>
         </div>
 
-        <div>
-          <h1 className="text-xl md:text-2xl font-md leading-relaxed text-center md:text-left mb-8 md:mb-0 text-gray-900 ">
-            YNV Tech, a division of Yantra Nirman
-            <br />
-            Vidhi (OPC) Private Limited, is an innovative
-            <br />
-            technology company based in India. Established in
-            <br />
-            2021, we specialize in cutting-edge AI solutions,
-            <br />
-            Mobile Device Management (MDM), and mobile &<br />
-            web application development.
-          </h1>
-        </div>
       </div>
-
-      <style jsx>{`
-        .box {
-          padding: 32px;
-          padding-left: 64px;
-        }
-
-        .outerBox{
-          padding: 6px;
-        }
-      `}</style>
-    </div>
     </>
-  );
-};
+  )
+}
 
-export default About;
+export default About
