@@ -14,8 +14,8 @@ const Page = () => {
 
   return (
     <div>
-      <Navigation />
-      <div className='w-full h-screen text-white pt-10'>
+      <div className='w-full h-screen text-white'>
+        <Navigation />
         <About />
       </div>
       <div className='w-full h-[150vh] bg-black'>
