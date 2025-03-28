@@ -23,7 +23,7 @@ const Page = () => {
           <ServiceSection />
         </div>
         <div className='w-full  bg-black pb-10 pt-20'>
-          <Clients/>
+          <Clients />
         </div>
         <div className='w-full bg-black'>
           <Projects />
