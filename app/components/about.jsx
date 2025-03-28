@@ -16,7 +16,7 @@ const About = () => {
           />
         </div>
         <div className='text-white absolute top-[25vh] left-[15vw] md:top-[20vh] md:left-[10vw] sm:top-[15vh] sm:left-[3vw]'>
-          <h1 className='text-8xl font-bold md:text-7xl sm:text-4xl'>YNV Tech</h1>
+          <h1 className='text-8xl font-bold md:text-7xl sm:text-4xl'><span className='text-9xl font-bold md:text-8xl sm:text-5xl'>Y</span>NV <span className='text-9xl font-bold md:text-8xl sm:text-5xl'>T</span>ech</h1>
           <h1 
             className='text-4xl text-white border-b-2 border-white font-semibold p-1 text md:text-2xl sm:text-xl' 
             style={{ display: 'inline-block' }}
