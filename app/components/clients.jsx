@@ -6,7 +6,7 @@ const Clients = () => {
   return (
     <div className="flex flex-col lg:flex-row justify-center items-center w-full gap-5 p-4">
       <div className="text-white text-center lg:text-left">
-        <h1 className="text-2xl lg:text-3xl pb-4">OUR AWESOME CLIENT</h1>
+        <h1 className="text-2xl lg:text-3xl pb-4 text">OUR AWESOME CLIENT</h1>
         <h1 className="text-4xl lg:text-6xl font-semibold">
           We Built Best<br /> Solution For Your<br /> Company...
         </h1>
