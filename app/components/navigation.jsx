@@ -47,8 +47,8 @@ const Navigation = () => {
       </div>
 
       <div
-        className={`fixed top-0 right-0 w-58 h-full shadow-lg bg-gray-600/60 backdrop-blur-md p-[20px] rounded-md transform ${
-          isOpen ? "translate-x-" : "translate-x-full"
+        className={`fixed top-0 right-0 w-58 h-full shadow-lg bg-gray-800/60 backdrop-blur-md p-[20px] rounded-md transform ${
+          isOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out z-[1000] p-5 flex flex-col gap-5`}
       >
         <button
@@ -66,14 +66,14 @@ const Navigation = () => {
           <a
             key={index}
             href={item.link}
-            className="text-xl font-medium capitalize text-gray-200 hover:text-white hover:bg-gray-300/20 p-2 rounded-md"
+            className="text-xl font-medium capitalize text-gray-200 p-2 ps-4 rounded-md"
           >
             {item.name}
           </a>
         ))}
         <a
           href="#contactUs"
-          className="p-2 text-xl font-medium capitalize  bg-white text-gray-800 hover:text-black border-2 rounded-xl shadow-2xl border-gray-600"
+          className="p-2 ps-3 text-xl font-medium capitalize text-white bg-gradient-to-r from-gray-800 to-gray-700 border-2 border-black rounded-3xl shadow-2xl"
         >
           Contact Us
         </a>
