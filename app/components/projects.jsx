@@ -48,7 +48,7 @@ const Projects = () => {
         {projectData.map((project, index) => (
           <div
             key={index}
-            className="group bg-gray-800/50 backdrop-blur-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl shadow-gray-950/50 border-gray-700/50 transform hover:-translate-y-3 transition-all duration-500"
+            className="group bg-gray-800/50 backdrop-blur-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl shadow-gray-950/50 border-gray-700/50 transform hover:-translate-y-3 transition-all duration-500 flex flex-col"
           >
             <div className="relative h-56 md:h-64 overflow-hidden">
               <Image
@@ -59,11 +59,11 @@ const Projects = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
-            <div className="p-7 relative">
-              <h2 className="text-2xl font-bold text-white mb-3 bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text  group-hover:drop-shadow-md transition-all duration-300">
+            <div className="p-7 flex flex-col flex-grow">
+              <h2 className="text-2xl font-bold text-white mb-3 bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text group-hover:drop-shadow-md transition-all duration-300">
                 {project.title}
               </h2>
-              <p className="text-gray-200 text-sm leading-relaxed mb-6 font-light">
+              <p className="text-gray-200 text-sm leading-relaxed mb-6 font-light flex-grow">
                 {project.description}
               </p>
               <Link href={project.url} target="_blank" rel="noopener noreferrer">
