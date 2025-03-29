@@ -6,6 +6,7 @@ const About = () => {
       <div
         className="bg-cover bg-center h-screen w-full pt-5"
         style={{ backgroundImage: "url('/back.png')" }}
+        id = 'aboutUs'
       >
         <div className='text-white absolute top-[30vh] left-[10vw] '>
           <h1 className='text-7xl font-bold '>YNV Tech</h1>
