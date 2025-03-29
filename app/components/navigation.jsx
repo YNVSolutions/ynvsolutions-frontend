@@ -67,6 +67,7 @@ const Navigation = () => {
             key={index}
             href={item.link}
             className="text-xl font-medium capitalize text-gray-200 p-2 ps-4 rounded-md"
+            onClick={() => setIsOpen(false)}
           >
             {item.name}
           </a>
@@ -74,6 +75,7 @@ const Navigation = () => {
         <a
           href="#contactUs"
           className="p-2 ps-3 text-xl font-medium capitalize text-white bg-gradient-to-r from-gray-800 to-gray-700 border-2 border-black rounded-3xl shadow-2xl"
+          onClick={() => setIsOpen(false)}
         >
           Contact Us
         </a>
