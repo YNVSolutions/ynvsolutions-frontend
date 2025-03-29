@@ -67,7 +67,7 @@ const Projects = () => {
                 {project.description}
               </p>
               <Link href={project.url} target="_blank" rel="noopener noreferrer">
-                <button className="w-full bg-gradient-to-r from-emerald-600 to-teal-600 text-white py-3 px-6 rounded-lg hover:from-emerald-700 hover:to-teal-700 transition-all duration-300 font-semibold shadow-md hover:shadow-lg transform hover:-translate-y-1">
+                <button className="w-full bg-gradient-to-r  text-white bg-blue-900/80 py-3 px-6 rounded-lg  transition-all duration-300 font-semibold shadow-md hover:shadow-lg transform hover:-translate-y-1">
                   Explore Project
                 </button>
               </Link>
