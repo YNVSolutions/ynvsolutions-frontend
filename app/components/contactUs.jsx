@@ -43,7 +43,7 @@ const ContactUs = () => {
           </div>
 
           
-          <div className="flex flex-col sm:flex-row justify-center md:justify-around items-center gap-4 mt-6">
+          <div className="hidden flex-col sm:flex-row justify-center md:justify-around items-center gap-4 mt-6">
             <div className="bg-gray-950 w-full sm:w-1/3 p-6 rounded-2xl text-center">
               <p className="text-gray-100 text-lg">Need an app for your website?</p>
               <p className="text-gray-400 mt-4">We got you covered!</p>
