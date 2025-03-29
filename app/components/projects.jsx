@@ -30,42 +30,45 @@ const Projects = () => {
   ];
 
   return (
-    <section className="min-h-screen bg-gray-900 py-20">
+    <section className="min-h-screen">
       {/* Header */}
-      <div className="container mx-auto px-4 text-center mb-16">
-        <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight">
-          <span className="text">Projects</span>
+      <div className="container mx-auto px-6 text-center mb-20">
+        <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight drop-shadow-lg">
+          <span className="bg-clip-text text-transparent text">
+            Projects
+          </span>
         </h1>
-        <p className="mt-4 text-gray-400 text-lg max-w-2xl mx-auto">
-          Explore our innovative solutions built with cutting-edge technology.
+        <p className="mt-5 text-gray-300 text-lg md:text-xl max-w-3xl mx-auto font-light leading-relaxed">
+          Discover our innovative solutions crafted with cutting-edge technology.
         </p>
       </div>
 
       {/* Projects Grid */}
-      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {projectData.map((project, index) => (
           <div
             key={index}
-            className="group bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300"
+            className="group bg-gray-800/50 backdrop-blur-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl shadow-gray-950/50 border-gray-700/50 transform hover:-translate-y-3 transition-all duration-500"
           >
-            <div className="relative h-48 md:h-64">
+            <div className="relative h-56 md:h-64 overflow-hidden">
               <Image
                 src={project.image}
                 alt={project.title}
                 fill
-                className="object-cover transition-transform duration-300 group-hover:scale-105"
+                className="object-cover transition-transform duration-500 group-hover:scale-110 group-hover:opacity-90"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
-            <div className="p-6">
-              <h2 className="text-2xl font-semibold text-white mb-3">
+            <div className="p-7 relative">
+              <h2 className="text-2xl font-bold text-white mb-3 bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text  group-hover:drop-shadow-md transition-all duration-300">
                 {project.title}
               </h2>
-              <p className="text-gray-300 text-sm leading-relaxed mb-6">
+              <p className="text-gray-200 text-sm leading-relaxed mb-6 font-light">
                 {project.description}
               </p>
               <Link href={project.url} target="_blank" rel="noopener noreferrer">
-                <button className="w-full bg-emerald-600 text-white py-2 px-4 rounded-lg hover:bg-emerald-700 transition-colors duration-200 font-medium">
-                  Visit Project
+                <button className="w-full bg-gradient-to-r from-emerald-600 to-teal-600 text-white py-3 px-6 rounded-lg hover:from-emerald-700 hover:to-teal-700 transition-all duration-300 font-semibold shadow-md hover:shadow-lg transform hover:-translate-y-1">
+                  Explore Project
                 </button>
               </Link>
             </div>
