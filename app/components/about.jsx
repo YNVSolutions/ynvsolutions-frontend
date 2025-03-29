@@ -28,7 +28,19 @@ const About = () => {
             Driving Digital Transformation Through Innovation
           </h2>
           
+          <div className='mb-8'>
+            <p className='text-base sm:text-lg md:text-xl lg:text-2xl'>
+              We are a dynamic technology company that builds the future through advanced AI solutions, powerful Mobile Device Management, and exceptional mobile app development for Android and iOS. Our website is your gateway to exploring our services, diving into our portfolio, and connecting with our team. Let's innovate together.
+            </p>
+          </div>
           
+          <div>
+            <Link href="#services">
+              <button className='text-sm sm:text-base md:text-lg lg:text-xl font-semibold border-2 border-white py-2 px-4 sm:px-5 md:px-6 lg:px-7 rounded-xl shadow-lg bg-gradient-to-r from-[#ec4899]/35 via-[#8b5cf6]/35 to-[#3b82f6]/35 hover:scale-105 hover:bg-gradient-to-r hover:from-[#ec4899]/60 hover:via-[#8b5cf6]/60 hover:to-[#3b82f6]/60 transition-all duration-300 ease-in-out'>
+                Explore Our Services
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
