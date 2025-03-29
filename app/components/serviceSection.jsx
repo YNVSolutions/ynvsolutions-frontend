@@ -4,7 +4,7 @@ import React from 'react'
 const ServiceSection = () => {
   return (
     <>
-      <div className='service' id='services'>
+      <div className='service' id ='services'> 
         <div className='text-center text-white font-semibold pb-10'>
           <h1 className='mt-8 font-bold text-4xl md:text-6xl lg:text-8xl'>Services<span className='text text-2xl md:text-4xl lg:text-6xl'> We Provide You</span></h1>
         </div>
