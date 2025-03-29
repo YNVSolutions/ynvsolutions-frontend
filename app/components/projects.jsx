@@ -39,7 +39,7 @@ const Projects = () => {
           </span>
         </h1>
         <p className="mt-5 text-gray-300 text-lg md:text-xl max-w-3xl mx-auto font-light leading-relaxed">
-          Discover our innovative solutions crafted with cutting-edge technology.
+        Unleash Your Curiosity—Discover Our Work.
         </p>
       </div>
 
