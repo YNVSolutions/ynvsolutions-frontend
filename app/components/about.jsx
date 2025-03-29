@@ -6,14 +6,14 @@ const About = () => {
   return (
     <div className="relative h-screen w-full overflow-hidden">
       
-      <div className="absolute inset-0 bg-black/50">
+      <div className="absolute inset-0 bg-black">
         <Image 
           src='/back.png' 
           layout="fill" 
           objectFit="cover" 
           alt='background' 
           priority
-          className="opacity-50 lg:opacity-70"
+          className="opacity-30 lg:opacity-30"
         />
       </div>
       
@@ -29,7 +29,7 @@ const About = () => {
           </h2>
           
           <div className='mb-8'>
-            <p className='text-base sm:text-lg md:text-xl lg:text-2xl'>
+            <p className='text-base sm:text-lg md:text-xl lg:text-2xl font-semibold'>
               We are a dynamic technology company that builds the future through advanced AI solutions, powerful Mobile Device Management, and exceptional mobile app development for Android and iOS. Our website is your gateway to exploring our services, diving into our portfolio, and connecting with our team. Let's innovate together.
             </p>
           </div>
