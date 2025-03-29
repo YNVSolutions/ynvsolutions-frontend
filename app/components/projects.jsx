@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 const projects = () => {
@@ -27,12 +28,6 @@ const projects = () => {
         .project-card:hover {
           transform: translateY(-10px);
         }
-        .project-image {
-          width: 100%;
-          height: auto;
-          max-height: 200px;
-          object-fit: contain;
-        }
         .project-content {
           padding: 20px;
         }
@@ -57,10 +52,12 @@ const projects = () => {
         }
       `}</style>
         <div className='project-card'>
-          <img
-            src='/ARX_vision.png'
+          <Image
+            src='/arxVisionLogo.jpg'
             alt='ARX Vision'
-            className='project-image'
+            width={500}
+            height={900}
+            style={{ objectFit: 'cover' }}
           />
           <div className='project-content'>
             <p className='project-title text'>ARX Vision</p>
@@ -80,10 +77,12 @@ const projects = () => {
           </div>
         </div>
         <div className='project-card'>
-          <img
-            src='/Our_media.png'
+          <Image
+            src='/ourMedia.png'
             alt='Our Media'
-            className='project-image'
+            width={500}
+            height={200}
+            style={{ objectFit: 'cover' }}
           />
           <div className='project-content'>
             <p className='project-title text'>Our Media</p>
@@ -103,10 +102,12 @@ const projects = () => {
           </div>
         </div>
         <div className='project-card'>
-          <img
-            src='/dona.png'
+          <Image
+            src='/Dona-logo.svg'
             alt='Dona Donations'
-            className='h-[200px] w-full pr-4 pl-4'
+            width={500}
+            height={200}
+            style={{ objectFit: 'cover' }}
           />
           <div className='project-content'>
             <p className='project-title text'>Dona Donations</p>

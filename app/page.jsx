@@ -14,8 +14,8 @@ const Page = () => {
 
   return (
     <div>
-      <Navigation />
-      <div className='w-full h-screen text-white pt-10'>
+      <div className='w-full h-screen text-white'>
+        <Navigation />
         <About />
       </div>
       <div className='w-full h-[150vh] bg-black'>
@@ -23,7 +23,7 @@ const Page = () => {
           <ServiceSection />
         </div>
         <div className='w-full  bg-black pb-10 pt-20'>
-          <Clients/>
+          <Clients />
         </div>
         <div className='w-full bg-black'>
           <Projects />
