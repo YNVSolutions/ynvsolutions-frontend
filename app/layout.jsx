@@ -12,6 +12,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Inter&family=Montserrat:wght@800&family=Raleway:wght@500&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body>
         {children}
       </body>

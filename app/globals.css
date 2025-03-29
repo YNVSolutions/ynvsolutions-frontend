@@ -41,3 +41,31 @@ body,html{
   .animate-float {
     animation: float 5s ease-in-out infinite;
   }
+
+
+  h1, .main-title {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+  }
+  
+  h2, .subheading {
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(90deg, #e84393, #6c5ce7);
+  }
+  
+  body, p, .content-text {
+    font-family: 'Inter', sans-serif;
+    color: white;
+  }
+  
+  button, .btn, .cta-button {
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+    background: linear-gradient(90deg, #8e44ad, #2980b9);
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover, .btn:hover {
+    background: linear-gradient(90deg, #9b59b6, #3498db);
+  }
