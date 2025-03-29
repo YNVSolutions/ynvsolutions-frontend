@@ -1,135 +1,82 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-const projects = () => {
+
+const Projects = () => {
+  const projectData = [
+    {
+      title: 'ARX Vision',
+      description: 'A suite of AI-driven accessibility tools for Android, iOS, and backend platforms, featuring real-time speech-to-text, object recognition, and navigation assistance for users with disabilities.',
+      image: '/Arx_vision_ss.png',
+      url: 'https://arx.vision/',
+      imageHeight: 300,
+    },
+    {
+      title: 'Our Media',
+      description: 'Implemented an MDM migration from Jamf to Kandji, enhancing device management, security, and remote troubleshooting for enterprise operations.',
+      image: '/Our_media_ss.png',
+      url: 'https://ourmedia.co.uk/',
+      imageHeight: 200,
+    },
+    {
+      title: 'Dona Donations',
+      description: 'Custom Android kiosk app for donation collection, featuring seamless transactions, real-time reporting, and secure integration with backend systems.',
+      image: '/Dona_ss.png',
+      url: 'https://donadonations.com/',
+      imageHeight: 200,
+    },
+  ];
+
   return (
-    <>
-      <div className='flex justify-center items-center text-8xl pt-20 pb-12 font-semibold'>
-        <h1 className='text'><span className='text-9xl text-white'>P</span>rojects</h1>
+    <section className="min-h-screen">
+      {/* Header */}
+      <div className="container mx-auto px-6 text-center mb-20">
+        <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight drop-shadow-lg">
+          <span className="bg-clip-text text-transparent text">
+            Projects
+          </span>
+        </h1>
+        <p className="mt-5 text-gray-300 text-lg md:text-xl max-w-3xl mx-auto font-light leading-relaxed">
+        Unleash Your Curiosity—Discover Our Work.
+        </p>
       </div>
-      <div className='projects-container' id='projects'>
-        <style jsx>{`
-        .projects-container {
-          display: flex;
-          justify-content: space-between;
-          flex-wrap: wrap;
-          padding: 20px;
-          background-color: #121212;
-        }
-        .project-card {
-          background-color: #1e1e1e;
-          border-radius: 12px;
-          width: 32%;
-          margin: 10px 0;
-          overflow: hidden;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-          transition: transform 0.3s ease-in-out;
-        }
-        .project-card:hover {
-          transform: translateY(-10px);
-        }
-        .project-content {
-          padding: 20px;
-        }
-        .project-title {
-          font-size: 1.5rem;
-          margin-bottom: 10px;
-        }
-        .project-description {
-          font-size: 1rem;
-          color: #e0e0e0;
-          line-height: 1.6;
-        }
-        @media (max-width: 768px) {
-          .project-card {
-            width: 48%;
-          }
-        }
-        @media (max-width: 480px) {
-          .project-card {
-            width: 100%;
-          }
-        }
-      `}</style>
-        <div className='project-card'>
-          <Image
-            src='/arxVisionLogo.jpg'
-            alt='ARX Vision'
-            width={500}
-            height={900}
-            style={{ objectFit: 'cover' }}
-          />
-          <div className='project-content'>
-            <p className='project-title text'>ARX Vision</p>
-            <p className='project-description'>
-              We developed a suite of AI-driven accessibility tools for Android,
-              iOS, and backend platforms to assist users with various disabilities.
-              These tools offer features like real-time speech-to-text
-              transcription, object recognition for visually impaired users, and
-              automated navigation assistance. The solution was tailored to improve
-              accessibility for diverse use cases in both everyday life and
-              specialized industries like healthcare and education.
-            </p>
-            <br />
-            <Link href='https://arx.vision/'>
-              <button className='bg-green-700 text-xl text-white rounded-lg p-2 w-full'>Visit</button>
-            </Link>
+
+      {/* Projects Cards*/}
+      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        {projectData.map((project, index) => (
+          <div
+            key={index}
+            className="group bg-gray-800/50 backdrop-blur-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl shadow-gray-950/50 border-gray-700/50 transform hover:-translate-y-3 transition-all duration-500 flex flex-col"
+          >
+            <div className="relative h-56 md:h-64 overflow-hidden">
+              <Image
+                src={project.image}
+                alt={project.title}
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-110 group-hover:opacity-90"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </div>
+            <div className="p-7 flex flex-col flex-grow">
+              <h2 className="text-2xl font-bold text-white mb-3 bg-gradient-to-r bg-clip-text group-hover:drop-shadow-md transition-all duration-300">
+                {project.title}
+              </h2>
+              <p className="text-gray-200 text-sm leading-relaxed mb-6 font-light flex-grow">
+                {project.description}
+              </p>
+              <Link href={project.url} target="_blank" rel="noopener noreferrer">
+                <button className="w-full bg-gradient-to-r  text-white bg-blue-900/80 py-3 px-6 rounded-lg  transition-all duration-300 font-semibold shadow-md hover:shadow-lg transform hover:-translate-y-1">
+                  Explore Project
+                </button>
+              </Link>
+            </div>
           </div>
-        </div>
-        <div className='project-card'>
-          <Image
-            src='/ourMedia.png'
-            alt='Our Media'
-            width={500}
-            height={200}
-            style={{ objectFit: 'cover' }}
-          />
-          <div className='project-content'>
-            <p className='project-title text'>Our Media</p>
-            <p className='project-description'>
-              For Our Media, we implemented a robust Mobile Device Management
-              (MDM) migration from Jamf to Kandji. This migration ensured smoother
-              device management across multiple devices, improved security policies,
-              and streamlined the deployment process for their enterprise operations.
-              Additionally, we integrated advanced features for remote
-              troubleshooting and monitoring, reducing the need for on-site IT
-              support, and enhancing productivity across the organization.
-            </p>
-            <br />
-            <Link href='https://ourmedia.co.uk/'>
-              <button className='bg-green-700 text-xl text-white rounded-lg p-2 w-full'>Visit</button>
-            </Link>
-          </div>
-        </div>
-        <div className='project-card'>
-          <Image
-            src='/Dona-logo.svg'
-            alt='Dona Donations'
-            width={500}
-            height={200}
-            style={{ objectFit: 'cover' }}
-          />
-          <div className='project-content'>
-            <p className='project-title text'>Dona Donations</p>
-            <p className='project-description'>
-              We developed a custom enterprise kiosk Android application for Dona
-              Donations that simplifies donation collection and management at
-              various physical locations. The app enables seamless transactions,
-              provides real-time reporting, and integrates with backend donation
-              tracking systems. Our work also involved ensuring the app's security
-              and stability for high-traffic environments, helping Dona Donations
-              manage their fundraising campaigns more effectively and ensuring smooth
-              operation across their kiosks nationwide.
-            </p>
-            <br />
-            <Link href='https://donadonations.com/'>
-              <button className='bg-green-700 text-xl text-white rounded-lg p-2 w-full '>Visit</button>
-            </Link>
-          </div>
-        </div>
+        ))}
       </div>
-    </>
+    </section>
   );
 };
 
-export default projects;
+export default Projects;
