@@ -43,7 +43,7 @@ const Projects = () => {
         </p>
       </div>
 
-      {/* Projects Grid */}
+      {/* Projects Cards*/}
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {projectData.map((project, index) => (
           <div
@@ -60,7 +60,7 @@ const Projects = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
             <div className="p-7 flex flex-col flex-grow">
-              <h2 className="text-2xl font-bold text-white mb-3 bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text group-hover:drop-shadow-md transition-all duration-300">
+              <h2 className="text-2xl font-bold text-white mb-3 bg-gradient-to-r bg-clip-text group-hover:drop-shadow-md transition-all duration-300">
                 {project.title}
               </h2>
               <p className="text-gray-200 text-sm leading-relaxed mb-6 font-light flex-grow">
