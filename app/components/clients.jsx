@@ -16,12 +16,12 @@ const Clients = () => {
           <div className="relative h-[15vh] w-[40vw] sm:h-[20vh] sm:w-[30vw] lg:h-[20vh] lg:w-[20vw] group">
             <Link href="https://arx.vision/">
               <Image
-                src="/arxVisionLogo.jpg"
+                src="/arx.png"
                 alt="ARX VISION"
                 layout="fill"
                 objectFit="contain"
                 quality={85}
-                className="border-2 border-black p-2 rounded-md transition-all duration-300 group-hover:scale-110 filter invert"
+                className="border-2 border-white p-2 rounded-md transition-all duration-300 group-hover:scale-110"
               />
             </Link>
           </div>
