@@ -30,7 +30,7 @@ const Projects = () => {
   ];
 
   return (
-    <section className="min-h-screen">
+    <section className="min-h-screen" id="projects">
       {/* Header */}
       <div className="container mx-auto px-6 text-center mb-20">
         <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight drop-shadow-lg">

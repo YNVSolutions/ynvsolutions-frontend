@@ -16,7 +16,7 @@ const Navigation = () => {
 
         <div className="hidden md:flex gap-10  items-center">
           {[
-            { name: "Home", link: "#home" },
+            { name: "Home", link: "#about" },
             { name: "About Us", link: "#about" },
             { name: "Services", link: "#services" },
             { name: "Projects", link: "#projects" },

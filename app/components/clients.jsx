@@ -28,12 +28,12 @@ const Clients = () => {
           <div className="relative h-[15vh] w-[40vw] sm:h-[20vh] sm:w-[30vw] lg:h-[20vh] lg:w-[20vw] group">
             <Link href="https://donadonations.com/">
               <Image
-                src="/Dona-logo.svg"
+                src="/Dona.png"
                 alt="DONA"
                 layout="fill"
                 objectFit="contain"
                 quality={85}
-                className="border-2 border-black p-2 rounded-md transition-all duration-300 group-hover:scale-110 filter invert"
+                className="border-2 border-white p-2 rounded-md transition-all duration-300 group-hover:scale-110 "
               />
             </Link>
           </div>
@@ -41,7 +41,7 @@ const Clients = () => {
         <div className="relative h-[15vh] w-[40vw] sm:h-[20vh] sm:w-[30vw] lg:h-[20vh] lg:w-[20vw] group">
           <Link href="https://ourmedia.co.uk/">
             <Image
-              src="/ourMedia.png"
+              src="/ourMedia.webp"
               alt="OUR MEDIA"
               layout="fill"
               objectFit="contain"

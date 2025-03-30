@@ -46,7 +46,7 @@ const ServiceSection = () => {
   ];
   return (
     <>
-    <div className="container mx-auto px-6 text-center mb-20">
+    <div className="container mx-auto px-6 text-center mb-20" id = 'services'>
         <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight drop-shadow-lg">
           <span className="bg-clip-text text-transparent text">
             <span className='text-6xl md:text-8xl'>S</span>ervices
