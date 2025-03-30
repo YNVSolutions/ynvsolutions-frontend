@@ -16,7 +16,7 @@ const Navigation = () => {
 
         <div className="hidden md:flex gap-10  items-center">
           {[
-            { name: "Home", link: "#home" },
+            { name: "Home", link: "#about" },
             { name: "About Us", link: "#about" },
             { name: "Services", link: "#services" },
             { name: "Projects", link: "#projects" },
@@ -41,6 +41,7 @@ const Navigation = () => {
         <button
           className="md:hidden text-3xl"
           onClick={() => setIsOpen(!isOpen)}
+          style={{ background: "none", border: "none" }}
         >
           ☰
         </button>
@@ -54,6 +55,7 @@ const Navigation = () => {
         <button
           className="text-white text-3xl self-end"
           onClick={() => setIsOpen(false)}
+          style={{ background: "none", border: "none" }}
         >
           ✕
         </button>

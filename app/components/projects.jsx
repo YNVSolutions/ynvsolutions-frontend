@@ -30,7 +30,7 @@ const Projects = () => {
   ];
 
   return (
-    <section className="min-h-screen">
+    <section className="min-h-screen" id="projects">
       {/* Header */}
       <div className="container mx-auto px-6 text-center mb-20">
         <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight drop-shadow-lg">
@@ -60,7 +60,7 @@ const Projects = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
             <div className="p-7 flex flex-col flex-grow">
-              <h2 className="text-2xl font-bold text-white mb-3 bg-gradient-to-r bg-clip-text group-hover:drop-shadow-md transition-all duration-300">
+              <h2 className="text text-2xl font-bold text-white mb-3 bg-gradient-to-r bg-clip-text group-hover:drop-shadow-md transition-all duration-300">
                 {project.title}
               </h2>
               <p className="text-gray-200 text-sm leading-relaxed mb-6 font-light flex-grow">

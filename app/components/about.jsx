@@ -4,7 +4,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div className="relative h-screen w-full overflow-hidden" id = "about">
       
       <div className="absolute inset-0 bg-black">
         <Image 

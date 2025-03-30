@@ -63,9 +63,12 @@ body,html{
     color: white;
     background: linear-gradient(90deg, #8e44ad, #2980b9);
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: 0.3s ease;
   }
   
   button:hover, .btn:hover {
-    background: linear-gradient(90deg, #9b59b6, #3498db);
+    background: linear-gradient(90deg, #732d91, #1f6699);
+    transition : 0.2s;
+    /* color: rgb(32, 32, 32) */
+    
   }
