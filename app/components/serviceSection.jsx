@@ -46,11 +46,21 @@ const ServiceSection = () => {
   ];
   return (
     <>
+    <div className="container mx-auto px-6 text-center mb-20">
+        <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight drop-shadow-lg">
+          <span className="bg-clip-text text-transparent text">
+            <span className='text-6xl md:text-8xl'>S</span>ervices
+          </span>
+        </h1>
+        <p className="mt-5 text-gray-300 text-lg md:text-xl max-w-3xl mx-auto font-light leading-relaxed">
+        Crafting Solutions, Delivering Excellence
+        </p>
+      </div>
       <div className='grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-1 md:grid-cols-2 md:grid-rows-4 sm:grid-cols-1 sm:grid-rows-4 gap-4'>
         {data.map((element, idx) => (
           <div 
             key={idx} 
-            className='bg-gradient-to-t from-gray-900/80 p-2 rounded-3xl sm:mx-2 md:mx-2 transform transition-transform duration-300 hover:scale-105'
+            className='bg-gradient-to-t from-gray-900/80 p-2 rounded-3xl  transform transition-transform duration-300 hover:scale-105'
           >
             <img src={element.image} className='h-[25vh] w-[80vw] lg:h-[25vh] lg:w-[20vw] md:h-[25vh] md:w-[80vw] sm:h-[25vh] sm:w-[80vw] object-contain' alt='' />
             <h2 className="text-2xl font-bold text-white mb-3 bg-gradient-to-r bg-clip-text group-hover:drop-shadow-md transition-all duration-300 px-2">{element.title}</h2>
