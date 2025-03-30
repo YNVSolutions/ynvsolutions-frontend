@@ -41,6 +41,7 @@ const Navigation = () => {
         <button
           className="md:hidden text-3xl"
           onClick={() => setIsOpen(!isOpen)}
+          style={{ background: "none", border: "none" }}
         >
           ☰
         </button>
@@ -54,6 +55,7 @@ const Navigation = () => {
         <button
           className="text-white text-3xl self-end"
           onClick={() => setIsOpen(false)}
+          style={{ background: "none", border: "none" }}
         >
           ✕
         </button>
