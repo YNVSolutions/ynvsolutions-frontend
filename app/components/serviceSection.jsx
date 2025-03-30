@@ -4,7 +4,7 @@ import React from 'react'
 const ServiceSection = () => {
   const data = [
     {
-      title: "Android & IOS App Development",
+      title: "App Development",
       description: "We craft innovative mobile applications for Android and iOS, focusing on efficiency and security. Our process includes design, development, deployment, testing, and maintenance. Explore our portfolio and benefit from our use of cutting-edge technologies.",
       image:'/app.gif',
       offers: [
@@ -46,11 +46,18 @@ const ServiceSection = () => {
   ];
   return (
     <>
-      <div className='flex justify-center items-center gap-2'>
+      <div className='flex justify-around items-center gap-2'>
       {data.map((element, idx) => (
-        <div key={idx}>
-          <img src={element.image} className='h-[22vh] w-[22vw]' alt=''/>
-          <h1 className='text-2xl text-white font-semibold'>{element.title}</h1>
+        <div key={idx} className='bg-gradient-to-t from-gray-900/80 p-2 rounded-3xl'>
+          <img src={element.image} className='h-[25vh] w-[25vw] object-contain' alt=''/>
+          <h2 className="text-2xl font-bold text-white mb-3 bg-gradient-to-r bg-clip-text group-hover:drop-shadow-md transition-all duration-300 px-2">{element.title}</h2>
+          <p className="text-gray-200 text-sm leading-relaxed mb-6 font-light flex-grow px-2">{element.description}</p>
+          <ul>
+            <h1 className='px-3'>We Offer</h1>
+            {element.offers.map((offer, offerIdx) => (
+              <li key={offerIdx} className="text-gray-300 text-sm mb-1 px-2">- {offer}</li>
+            ))}
+          </ul>
         </div>
       ))}
       </div>
