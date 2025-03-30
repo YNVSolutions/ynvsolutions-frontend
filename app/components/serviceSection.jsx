@@ -46,10 +46,10 @@ const ServiceSection = () => {
   ];
   return (
     <>
-      <div className='flex justify-around items-center'>
+      <div className='flex justify-center items-center gap-2'>
       {data.map((element, idx) => (
         <div key={idx}>
-          <Image src={element.image} height={10} width={800} alt=''/>
+          <img src={element.image} className='h-[22vh] w-[22vw]' alt=''/>
           <h1 className='text-2xl text-white font-semibold'>{element.title}</h1>
         </div>
       ))}
