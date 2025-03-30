@@ -46,16 +46,16 @@ const ServiceSection = () => {
   ];
   return (
     <>
-      <div className='flex justify-around items-center gap-2'>
+      <div className='grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-1 md:grid-cols-2 md:grid-rows-4 sm:grid-cols-1 sm:grid-rows-4 gap-4'>
         {data.map((element, idx) => (
-          <div key={idx} className='bg-gradient-to-t from-gray-900/80 p-2 rounded-3xl'>
-            <img src={element.image} className='h-[25vh] w-[25vw] object-contain' alt='' />
+          <div key={idx} className='bg-gradient-to-t from-gray-900/80 p-2 rounded-3xl sm:mx-2 md:mx-2'>
+            <img src={element.image} className='h-[25vh] w-[80vw] lg:h-[25vh] lg:w-[20vw] md:h-[25vh] md:w-[80vw] sm:h-[25vh] sm:w-[80vw] object-contain' alt='' />
             <h2 className="text-2xl font-bold text-white mb-3 bg-gradient-to-r bg-clip-text group-hover:drop-shadow-md transition-all duration-300 px-2">{element.title}</h2>
             <p className="text-gray-200 text-sm leading-relaxed mb-6 font-light flex-grow px-2">
               {element.description}
             </p>
             <ul>
-              <h1 className='px-3'>We Offer</h1>
+              <h1 className='px-3 text py-1'>Features :-</h1>
               {element.offers.map((offer, offerIdx) => (
                 <li key={offerIdx} className="text-gray-300 text-sm mb-1 px-2">- {offer}</li>
               ))}
