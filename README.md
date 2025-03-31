@@ -2,7 +2,7 @@
 
 # Yantra Nirmaan Vidhi Tech
 
-## View production build : [Vercel](https://conversation-club.vercel.app/)
+## View production build : [Vercel](https://www.ynvsolutions.com/)
 
 ## About YNV Tech
 
