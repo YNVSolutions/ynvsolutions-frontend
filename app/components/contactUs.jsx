@@ -1,9 +1,31 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { ToastContainer, toast, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import {db} from "./firebaseConfig"
+import {collection, addDoc} from "firebase/firestore"
+
+async function addData(name,email,message){
+  try{
+    const docRef = await addDoc(collection(db,"messages"),{
+      name: name,
+      email: email,
+      message: message,
+    });
+    console.log("doc added with ID",docRef.id)
+    return true;
+  }catch(error){
+    console.error("error!",error)
+    return false
+  }
+}
 
 const ContactUs = () => {
+
+  const [name, setName] = useState(" ");
+  const [email, setEmail] = useState(" ");
+  const [message, setMessage] = useState(" ");
+
   const notify = () =>
     toast.success("Complete !", {
       position: "top-center",
@@ -17,8 +39,14 @@ const ContactUs = () => {
       transition: Bounce,
     });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
+    const added= await addData(name,email,message);
+    if (added){
+      setName(" ");
+      setEmail(" ");
+      setMessage(" ");
+    }
     notify();
   };
 
@@ -70,17 +98,14 @@ const ContactUs = () => {
               
               <div className="flex flex-col sm:flex-row gap-2">
                 <input
-                  placeholder="First Name"
                   className="w-full p-3 bg-gray-900 focus:bg-gray-950 text-white border border-gray-600 rounded-lg 
                   focus:outline-none focus:ring-2 focus:ring-blue-400 border-none"
                   type="text"
+                  id="name"
+                  value={name}
+                  onChange={(e)=>setName(e.target.value)}
+                  placeholder="Name"
                   required
-                />
-                <input
-                  type="text"
-                  placeholder="Last Name"
-                  className="w-full p-3 bg-gray-900 focus:bg-gray-950 text-white border border-gray-600 rounded-lg 
-                  focus:outline-none focus:ring-2 focus:ring-blue-400 border-none"
                 />
               </div>
 
@@ -88,6 +113,9 @@ const ContactUs = () => {
               <div className="w-full mt-2">
                 <input
                   type="email"
+                  id="email"
+                  value={email}
+                  onChange={(e)=>setEmail(e.target.value)}
                   required
                   placeholder="Email address"
                   className="w-full p-3 bg-gray-900 focus:bg-gray-950 text-white border border-gray-600 rounded-lg 
@@ -99,6 +127,9 @@ const ContactUs = () => {
               <div className="w-full mt-4">
                 <textarea
                   placeholder="How can we help you?"
+                  id="message"
+                  value={message}
+                  onChange={(e)=>setMessage(e.target.value)}
                   rows={4}
                   className="w-full p-3 bg-gray-900 border border-gray-600 text-white rounded-lg 
                   focus:outline-none focus:ring-2 focus:ring-blue-400 focus:bg-gray-950 resize-none border-none"
