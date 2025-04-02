@@ -22,9 +22,9 @@ async function addData(name,email,message){
 
 const ContactUs = () => {
 
-  const [name, setName] = useState(" ");
-  const [email, setEmail] = useState(" ");
-  const [message, setMessage] = useState(" ");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const notify = () =>
     toast.success("Complete !", {
@@ -43,9 +43,9 @@ const ContactUs = () => {
     e.preventDefault();
     const added= await addData(name,email,message);
     if (added){
-      setName(" ");
-      setEmail(" ");
-      setMessage(" ");
+      setName("");
+      setEmail("");
+      setMessage("");
     }
     notify();
   };
