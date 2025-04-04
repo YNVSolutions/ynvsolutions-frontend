@@ -39,7 +39,7 @@ const Footer = () => {
                 <a role="button" href="https://www.facebook.com/" className="text-gray-400 hover:text-white text-2xl transition-colors" aria-label="facebook">
                   <FaFacebookF />
                 </a>
-                <a role="button" href="https://www.linkedin.com/" className="text-gray-400 hover:text-white text-2xl transition-colors" aria-label="LinkedIn">
+                <a role="button" href="https://www.linkedin.com/company/ynv-solutions/" className="text-gray-400 hover:text-white text-2xl transition-colors" aria-label="LinkedIn">
                   <FaLinkedinIn />
                 </a>
                 <a role="button" href="https://x.com/?lang=en" className="text-gray-400 hover:text-white text-2xl transition-colors" aria-label="Twitter">
