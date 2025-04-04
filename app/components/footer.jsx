@@ -22,10 +22,10 @@ const Footer = () => {
             <div>
               <h2 className="text-2xl font-semibold mb-4" style={{ background: "none", border: "none" }}>Links</h2>
               <ul className="text-gray-400 space-y-2">
-                <li><a href="#about" className="hover:text-white transition-colors">About Us</a></li>
-                <li><a href="#services" className="hover:text-white transition-colors">Services</a></li>
-                <li><a href="#projects" className="hover:text-white transition-colors">Projects</a></li>
-                <li><a href="#contactUs" className="hover:text-white transition-colors">Contact Us</a></li>
+                <li><a role="button" href="#about" className="hover:text-white transition-colors">About Us</a></li>
+                <li><a role="button" href="#services" className="hover:text-white transition-colors">Services</a></li>
+                <li><a role="button" href="#projects" className="hover:text-white transition-colors">Projects</a></li>
+                <li><a role="button" href="#contactUs" className="hover:text-white transition-colors">Contact Us</a></li>
               </ul>
             </div>
 
@@ -33,16 +33,16 @@ const Footer = () => {
             <div>
             <h2 className="text-2xl font-semibold mb-4" style={{ background: "none", border: "none" }}>Follow Us</h2>
               <div className="flex justify-center md:justify-start space-x-6">
-                <a href="https://www.instagram.com/" className="text-gray-400 hover:text-white text-2xl transition-colors" aria-label="Instagram">
+                <a role="button" href="https://www.instagram.com/" className="text-gray-400 hover:text-white text-2xl transition-colors" aria-label="Instagram">
                   <FaInstagram />
                 </a>
-                <a href="https://www.facebook.com/" className="text-gray-400 hover:text-white text-2xl transition-colors" aria-label="facebook">
+                <a role="button" href="https://www.facebook.com/" className="text-gray-400 hover:text-white text-2xl transition-colors" aria-label="facebook">
                   <FaFacebookF />
                 </a>
-                <a href="https://www.linkedin.com/" className="text-gray-400 hover:text-white text-2xl transition-colors" aria-label="LinkedIn">
+                <a role="button" href="https://www.linkedin.com/" className="text-gray-400 hover:text-white text-2xl transition-colors" aria-label="LinkedIn">
                   <FaLinkedinIn />
                 </a>
-                <a href="https://x.com/?lang=en" className="text-gray-400 hover:text-white text-2xl transition-colors" aria-label="Twitter">
+                <a role="button" href="https://x.com/?lang=en" className="text-gray-400 hover:text-white text-2xl transition-colors" aria-label="Twitter">
                   <FaTwitter />
                 </a>
               </div>
