@@ -33,16 +33,16 @@ const Footer = () => {
             <div>
             <h2 className="text-2xl font-semibold mb-4" style={{ background: "none", border: "none" }}>Follow Us</h2>
               <div className="flex justify-center md:justify-start space-x-6">
-                <a href="#instagram" className="text-gray-400 hover:text-white text-2xl transition-colors">
+                <a href="https://www.instagram.com/" className="text-gray-400 hover:text-white text-2xl transition-colors">
                   <FaInstagram />
                 </a>
-                <a href="#facebook" className="text-gray-400 hover:text-white text-2xl transition-colors">
+                <a href="https://www.facebook.com/" className="text-gray-400 hover:text-white text-2xl transition-colors">
                   <FaFacebookF />
                 </a>
-                <a href="#linkedin" className="text-gray-400 hover:text-white text-2xl transition-colors">
+                <a href="https://www.linkedin.com/" className="text-gray-400 hover:text-white text-2xl transition-colors">
                   <FaLinkedinIn />
                 </a>
-                <a href="#twitter" className="text-gray-400 hover:text-white text-2xl transition-colors">
+                <a href="https://x.com/?lang=en" className="text-gray-400 hover:text-white text-2xl transition-colors">
                   <FaTwitter />
                 </a>
               </div>
