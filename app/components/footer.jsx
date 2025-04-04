@@ -20,9 +20,9 @@ const Footer = () => {
 
             {/* Quick Links */}
             <div>
-              <p className="text-2xl font-semibold text-pink-500 mb-4">Links</p>
+              <h2 className="text-2xl font-semibold mb-4" style={{ background: "none", border: "none" }}>Links</h2>
               <ul className="text-gray-400 space-y-2">
-                <li><a href="#aboutUs" className="hover:text-white transition-colors">About Us</a></li>
+                <li><a href="#about" className="hover:text-white transition-colors">About Us</a></li>
                 <li><a href="#services" className="hover:text-white transition-colors">Services</a></li>
                 <li><a href="#projects" className="hover:text-white transition-colors">Projects</a></li>
                 <li><a href="#contactUs" className="hover:text-white transition-colors">Contact Us</a></li>
@@ -31,7 +31,7 @@ const Footer = () => {
 
             {/* Social Media Icons */}
             <div>
-              <p className="text-2xl font-semibold text-pink-500 mb-4">Follow Us</p>
+            <h2 className="text-2xl font-semibold mb-4" style={{ background: "none", border: "none" }}>Follow Us</h2>
               <div className="flex justify-center md:justify-start space-x-6">
                 <a href="#instagram" className="text-gray-400 hover:text-white text-2xl transition-colors">
                   <FaInstagram />
@@ -50,7 +50,7 @@ const Footer = () => {
 
             {/* Address */}
             <div>
-              <p className="text-2xl font-semibold text-pink-500 mb-4">Reach Us</p>
+            <h2 className="text-2xl font-semibold mb-4" style={{ background: "none", border: "none" }}>Reach Us</h2>
               <p className="text-gray-400 text-sm">
                 NIRMAAN VIDHI (OPC) PRIVATE LIMITED <br />
                 C/O S. Abdul Ghaffer & S Abdul Nadim, <br />
