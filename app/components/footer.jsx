@@ -59,7 +59,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#services" className="hover:text-white transition-colors">
+                  <a href="https://www.linkedin.com/company/ynv-solutions/" className="hover:text-white transition-colors">
                     LinkedIn
                   </a>
                 </li>
