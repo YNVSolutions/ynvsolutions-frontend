@@ -97,6 +97,7 @@ const ContactUs = () => {
             <form onSubmit={handleSubmit}>
               
               <div className="flex flex-col sm:flex-row gap-2">
+              <label htmlFor="name" className="sr-only">Name</label>
                 <input
                   className="w-full p-3 bg-gray-900 focus:bg-gray-950 text-white border border-gray-600 rounded-lg 
                   focus:outline-none focus:ring-2 focus:ring-blue-400 border-none"
@@ -111,6 +112,7 @@ const ContactUs = () => {
 
               
               <div className="w-full mt-2">
+              <label htmlFor="email" className="sr-only">Email</label>
                 <input
                   type="email"
                   id="email"
@@ -125,6 +127,7 @@ const ContactUs = () => {
 
               
               <div className="w-full mt-4">
+              <label htmlFor="message" className="sr-only">Message</label>
                 <textarea
                   placeholder="How can we help you?"
                   id="message"
