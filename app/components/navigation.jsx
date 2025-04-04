@@ -61,7 +61,7 @@ const Navigation = () => {
           ✕
         </button>
         {[
-          { name: "Home", link: "#home" },
+          { name: "Home", link: "#about" },
           { name: "About Us", link: "#about" },
           { name: "Services", link: "#services" },
           { name: "Projects", link: "#projects" },
