@@ -11,6 +11,7 @@ const Navigation = () => {
           <img
             src="favicon.ico"
             className="w-14 h-14 rounded-full border-2 border-gray-600"
+            alt="YNV logo"
           />
         </div>
 
@@ -60,7 +61,7 @@ const Navigation = () => {
           ✕
         </button>
         {[
-          { name: "Home", link: "#home" },
+          { name: "Home", link: "#about" },
           { name: "About Us", link: "#about" },
           { name: "Services", link: "#services" },
           { name: "Projects", link: "#projects" },

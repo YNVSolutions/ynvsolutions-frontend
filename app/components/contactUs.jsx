@@ -60,7 +60,7 @@ const ContactUs = () => {
         
         <div className="bg-transparent w-full h-full flex-[1.5] p-6 md:p-10">
           <div className="w-full h-auto p-2 md:p-4">
-            <p className="text-white text-5xl md:text-8xl mb-2 md:mb-4 text-center md:text-left">Contact Us</p>
+            <h1 className="content-text text-white text-5xl md:text-8xl mb-2 md:mb-4 text-center md:text-left">Contact Us</h1>
             <p className="text-gray-300 text-lg md:text-xl text-center md:text-left md:mb-10">
               Email us at:{" "}
               <a className="text-gray-50" href="mailto:ynvtech@gmail.com">
@@ -90,13 +90,14 @@ const ContactUs = () => {
         
         <div className="bg-transparent w-full flex-1 p-4 md:p-8 flex items-center justify-center">
           <div className="bg-gray-700 w-full sm:w-4/5 p-6 md:p-8 rounded-2xl shadow-2xl shadow-blue-900/50">
-            <p className="text-white text-3xl md:text-5xl text-center md:text-left">Get in touch</p>
+            <h2 className="content-text text-white text-3xl md:text-5xl text-center md:text-left" style={{ background: "none", border: "none" }}>Get in touch</h2>
             <p className="text-gray-100 text-sm md:text-md text-center md:text-left mb-4 ms-2">
               Let’s discuss how we can help
             </p>
             <form onSubmit={handleSubmit}>
               
               <div className="flex flex-col sm:flex-row gap-2">
+              <label htmlFor="name" className="sr-only">Name</label>
                 <input
                   className="w-full p-3 bg-gray-900 focus:bg-gray-950 text-white border border-gray-600 rounded-lg 
                   focus:outline-none focus:ring-2 focus:ring-blue-400 border-none"
@@ -111,6 +112,7 @@ const ContactUs = () => {
 
               
               <div className="w-full mt-2">
+              <label htmlFor="email" className="sr-only">Email</label>
                 <input
                   type="email"
                   id="email"
@@ -125,6 +127,7 @@ const ContactUs = () => {
 
               
               <div className="w-full mt-4">
+              <label htmlFor="message" className="sr-only">Message</label>
                 <textarea
                   placeholder="How can we help you?"
                   id="message"

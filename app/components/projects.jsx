@@ -53,7 +53,7 @@ const Projects = () => {
             <div className="relative h-56 md:h-64 overflow-hidden">
               <Image
                 src={project.image}
-                alt={project.title}
+                alt={project.title  + " screenshot"}
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-110 group-hover:opacity-90"
               />
