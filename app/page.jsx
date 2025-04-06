@@ -7,9 +7,6 @@ import Clients from "./components/clients";
 import ServiceSection from "./components/serviceSection";
 import Projects from "./components/projects";
 import Footer from "./components/footer";
-
-
-
 const Page = () => {
 
   return (
