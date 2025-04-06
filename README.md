@@ -1,10 +1,10 @@
 <img src="app/favicon.ico" height=200 />
 
-# Yantra Nirmaan Vidhi Tech
+# Yantra Nirmaan Vidhi Solutions
 
 ## View production build : [YVV Solutions](https://www.ynvsolutions.com/)
 
-## About YNV Tech
+## About YNV Solutions
 
 YNV Tech, a division of Yantra Nirman Vidhi (OPC) Private Limited, is an innovative technology company based in India. Established in 2021, we specialize in cutting-edge AI solutions, Mobile Device Management (MDM), and mobile & web application development.
 
