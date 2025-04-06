@@ -61,13 +61,6 @@ const ContactUs = () => {
         <div className="bg-transparent w-full h-full flex-[1.5] p-6 md:p-10">
           <div className="w-full h-auto p-2 md:p-4">
             <h1 className="content-text text-white text-5xl md:text-8xl mb-2 md:mb-4 text-center md:text-left">Contact Us</h1>
-            <p className="text-gray-300 text-lg md:text-xl text-center md:text-left md:mb-10">
-              Email us at:{" "}
-              <a className="text-gray-50" href="mailto:ynvtech@gmail.com">
-                ynvtech@gmail.com
-              </a>{" "} <br />
-              OR, fill the form and we will reach out to you.
-            </p>
           </div>
 
           
