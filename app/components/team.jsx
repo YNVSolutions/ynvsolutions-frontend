@@ -11,6 +11,7 @@ const Team = () => {
             image: '/dharmendra.png',
             lurl:"https://www.linkedin.com/in/dharmsingh",
             location:"Bristol, England, United Kingdom",
+            email:"dharmendrascpm@gmail.com",
         },
         {
             title: "Yash",
@@ -18,6 +19,7 @@ const Team = () => {
             image: '/yash.png',
             lurl:"https://www.linkedin.com/in/yash-raghuvanshi-a14361287",
             location:"Noida, Uttar Pradesh, India",
+            email:"yashraghuvans@gmail.com"
         },
         {
             title: "Jitesh",
@@ -25,13 +27,15 @@ const Team = () => {
             image: '/jitesh.png',
             lurl:"https://www.linkedin.com/in/jitesh-singh-920413285",
             location:"Ludhiana, Punjab, India",
+            email:"jiteshsingh4305@gmail.com",
         },
         {
             title: "Priya",
             description: "Frontend Developer",
             image: '/priya.png',
             lurl:"https://www.linkedin.com/in/priya-singh-a5859799/",
-            location:"Uttar Pradesh, India"
+            location:"Uttar Pradesh, India",
+            email:"",
         },
         {
             title: "Manav",
@@ -39,6 +43,7 @@ const Team = () => {
             image: '/manav.png',
             lurl:"#",
             location:"Bristol, England, United Kingdom",
+            email:"Manavpampher@gmail.com",
         },
     ];
 
@@ -68,9 +73,11 @@ const Team = () => {
                                 <a href={element.lurl} aria-label={`LinkedIn profile of ${element.title}`} className="hover:text-blue-700">
                                     <FaLinkedin size={24} />
                                 </a>
-                                <a href="#" aria-label={`Email ${element.title}`} className="hover:text-red-700">
-                                    <BiLogoGmail size={24} />
-                                </a>
+                                {element.email && (
+                                    <a href={`mailto:${element.email}`} aria-label={`Email ${element.title}`} className="hover:text-red-700">
+                                        <BiLogoGmail size={24} />
+                                    </a>
+                                )}
                             </div>
                         </div>
                     ))}
