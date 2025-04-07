@@ -7,7 +7,7 @@ const Team = () => {
     const data = [
         {
             title: "Dharmendra",
-            description: "FullStack Developer",
+            description: "CEO & Founder",
             image: '/dharmendra.png',
             lurl:"https://www.linkedin.com/in/dharmsingh",
             location:"Bristol, England, United Kingdom",
@@ -15,7 +15,7 @@ const Team = () => {
         },
         {
             title: "Yash",
-            description: "Frontend Developer",
+            description: "Full Stack Developer",
             image: '/yash.png',
             lurl:"https://www.linkedin.com/in/yash-raghuvanshi-a14361287",
             location:"Noida, Uttar Pradesh, India",
@@ -23,7 +23,7 @@ const Team = () => {
         },
         {
             title: "Jitesh",
-            description: "Frontend Developer",
+            description: "Full Stack Developer",
             image: '/jitesh.png',
             lurl:"https://www.linkedin.com/in/jitesh-singh-920413285",
             location:"Ludhiana, Punjab, India",
@@ -39,7 +39,7 @@ const Team = () => {
         },
         {
             title: "Manav",
-            description: "Backend Developer",
+            description: "Software Engineer",
             image: '/manav.png',
             lurl:"#",
             location:"Bristol, England, United Kingdom",
