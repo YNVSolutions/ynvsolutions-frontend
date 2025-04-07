@@ -34,7 +34,7 @@ const Team = () => {
 
     return (
         <>
-            <div className='h-screen'>
+            <div className='mb-28 mt-28'>
                 <div className='container mx-auto px-6 text-center mb-20'>
                     <h1 className="text-5xl md:text-7xl font-extrabold text drop-shadow-lg">Our Team</h1>
                 </div>
