@@ -23,7 +23,7 @@ const Team = () => {
         },
         {
             title: "Jitesh",
-            description: "Full Stack Developer",
+            description: "App Developer",
             image: '/jitesh.png',
             lurl:"https://www.linkedin.com/in/jitesh-singh-920413285",
             location:"Ludhiana, Punjab, India",
@@ -39,7 +39,7 @@ const Team = () => {
         },
         {
             title: "Manav",
-            description: "Software Engineer",
+            description: "Backend Developer",
             image: '/manav.png',
             lurl:"#",
             location:"Bristol, England, United Kingdom",
