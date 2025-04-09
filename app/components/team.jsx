@@ -7,10 +7,10 @@ const Team = () => {
     const data = [
         {
             title: "Dharmendra",
-            description: "CEO & Founder",
+            description: "Technical Consultant",
             image: '/dharmendra.png',
             lurl:"https://www.linkedin.com/in/dharmsingh",
-            location:"Bristol, England, United Kingdom",
+            location:"Bristol, England, UK",
             email:"dharmendrascpm@gmail.com",
         },
         {
@@ -23,7 +23,7 @@ const Team = () => {
         },
         {
             title: "Jitesh",
-            description: "Full Stack Developer",
+            description: "App Developer",
             image: '/jitesh.png',
             lurl:"https://www.linkedin.com/in/jitesh-singh-920413285",
             location:"Ludhiana, Punjab, India",
@@ -36,25 +36,17 @@ const Team = () => {
             lurl:"https://www.linkedin.com/in/priya-singh-a5859799/",
             location:"Uttar Pradesh, India",
             email:"",
-        },
-        {
-            title: "Manav",
-            description: "Software Engineer",
-            image: '/manav.png',
-            lurl:"#",
-            location:"Bristol, England, United Kingdom",
-            email:"Manavpampher@gmail.com",
-        },
+        }
     ];
 
     return (
         <>
-            <div className='mb-28 mt-28'>
+            <div className='mb-28 mt-28' id='team'>
                 <div className='container mx-auto px-6 text-center mb-20'>
                     <h1 className="text-5xl md:text-7xl font-extrabold text drop-shadow-lg">Our Team</h1>
                 </div>
                 <div className='grid grid-cols-1 sm:grid-cols-1 sm:grid-rows-4 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 gap-4 px-6'>
-                    {data.slice(0, 5).map((element) => (
+                    {data.slice(0, 4).map((element) => (
                         <div 
                             key={element.title} 
                             className="bg-gray-800 rounded-lg shadow-lg p-4 min-w-[200px] min-h-[280px] flex flex-col items-center justify-center"
