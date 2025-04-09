@@ -11,8 +11,9 @@ const Navigation = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPosition = window.scrollY;
-
-      if (currentScrollPosition > scrollPosition) {
+      const threshold = 200; 
+  
+      if (currentScrollPosition > scrollPosition && currentScrollPosition > threshold) {
         if (isVisible && !isTransitioning) {
           setIsTransitioning(true);
           setTimeout(() => {
@@ -20,7 +21,7 @@ const Navigation = () => {
             setIsTransitioning(false);
           }, transitionDuration);
         }
-      } else {
+      } else if (currentScrollPosition < scrollPosition) {
         if (!isVisible && !isTransitioning) {
           setIsTransitioning(true);
           setIsVisible(true);
@@ -29,56 +30,60 @@ const Navigation = () => {
           }, transitionDuration);
         }
       }
-
+  
       setScrollPosition(currentScrollPosition);
     };
-
+  
     window.addEventListener("scroll", handleScroll);
-
+  
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [scrollPosition, isVisible, isTransitioning, transitionDuration]);
-
   return (
     <>
       <div
-        className={`navBar shadow-lg bg-gradient-to-r from-[#ec4899]/35 via-[#8b5cf6]/35 to-[#3b82f6]/35 w-full flex justify-between items-center fixed z-[999] bg-white/70 backdrop-blur-md p-[10px] rounded-md transition-all duration-${transitionDuration} ease-in-out ${
+        className={`navBar p-4 w-full flex justify-between items-center fixed z-[999] rounded-md transition-all duration-${transitionDuration} ease-in-out ${
           isVisible ? "top-0" : "-top-full"
         }`}
       >
-        <div className="logo">
+        <div className="logo flex items-center gap-2">
           <img
             src="/favicon.ico"
             className="w-14 h-14 rounded-full border-2 border-gray-600"
             alt="YNV logo"
           />
+          <p className="text-2xl font-bold text-gray-200  bg-white/10 backdrop-blur-md px-4 py-2 rounded-2xl">
+            YNV Solutions
+          </p>
         </div>
 
-        <div className="hidden md:flex gap-10  items-center">
+    
+        <div className="hidden md:flex gap-8 items-center bg-white/10 backdrop-blur-md rounded-2xl justify-around p-1 px-3 shadow-2xl">
           {[
             { name: "Home", link: "#home" },
             { name: "About Us", link: "#about" },
             { name: "Services", link: "#services" },
+            { name: "Team", link: "#team" },
             { name: "Projects", link: "#projects" },
           ].map((item, index) => (
             <a
               key={index}
               href={item.link}
-              className="text-xl font-medium capitalize hover:bg-gray-200/50 hover:text-gray-900 rounded-xl p-2 px-3 text-black drop-shadow-md transition-all duration-200 ease-in-out"
+              className="text-xl font-medium capitalize  hover:bg-white/10 text-gray-300 hover:text-white rounded-2xl p-2 px-3  drop-shadow-md transition-all duration-200 ease-in-out"
             >
               {item.name}
             </a>
           ))}
-          <a
+          
+        </div>
+        <a
             href="#contact"
-            className="px-3 py-1.5 text-xl font-medium capitalize text-white bg-gradient-to-r from-gray-800 to-gray-900 border-2 border-gray-900 rounded-full relative overflow-hidden group transition-all duration-300 ease-out animate-fade-in"
+            className="px-3 py-2 text-xl font-medium capitalize bg-white/10 hover:bg-white/20 text-gray-300 hover:text-white  border-2 border-gray-400 rounded-2xl backdrop-blur-md relative overflow-hidden group transition-all duration-200 ease-in-out"
           >
-            <span className="absolute inset-0 bg-gradient-to-r from-gray-700 to-gray-800 transform translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
+            {/* <span className="absolute inset-0 bg-gradient-to-r from-gray-600 to-gray-700 transform translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300 ease-out"></span> */}
             <span className="relative z-10">Contact Us</span>
           </a>
-        </div>
-
         <button
           className="md:hidden text-3xl"
           onClick={() => setIsOpen(!isOpen)}
@@ -104,6 +109,7 @@ const Navigation = () => {
           { name: "Home", link: "#home" },
           { name: "About Us", link: "#about" },
           { name: "Services", link: "#services" },
+          { name: "Team", link: "#team" },
           { name: "Projects", link: "#projects" },
         ].map((item, index) => (
           <a
