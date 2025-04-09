@@ -39,7 +39,6 @@ const Navigation = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [scrollPosition, isVisible, isTransitioning, transitionDuration]);
-
   return (
     <>
       <div
@@ -69,7 +68,7 @@ const Navigation = () => {
             <a
               key={index}
               href={item.link}
-              className="text-xl font-medium capitalize hover:bg-gray-200/50 hover:text-gray-900 rounded-xl p-2 px-3 text-black drop-shadow-md transition-all duration-200 ease-in-out"
+              className="text-xl font-medium capitalize  hover:bg-white/10 text-gray-300 hover:text-white rounded-2xl p-2 px-3  drop-shadow-md transition-all duration-200 ease-in-out"
             >
               {item.name}
             </a>
