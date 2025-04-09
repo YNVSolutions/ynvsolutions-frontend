@@ -9,8 +9,6 @@ import Projects from "./components/projects";
 import Footer from "./components/footer";
 import Card from './components/team';
 
-
-
 const Page = () => {
 
   return (
