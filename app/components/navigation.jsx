@@ -58,7 +58,8 @@ const Navigation = () => {
           </p>
         </div>
 
-        <div className="hidden md:flex gap-10  items-center">
+    
+        <div className="hidden md:flex gap-8 items-center bg-white/10 backdrop-blur-md rounded-2xl justify-around p-1 px-3 shadow-2xl">
           {[
             { name: "Home", link: "#home" },
             { name: "About Us", link: "#about" },
