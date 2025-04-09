@@ -11,7 +11,7 @@ const Navigation = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPosition = window.scrollY;
-      const threshold = 200; // Hide navbar only after scrolling 100px
+      const threshold = 200; 
   
       if (currentScrollPosition > scrollPosition && currentScrollPosition > threshold) {
         if (isVisible && !isTransitioning) {
@@ -54,7 +54,7 @@ const Navigation = () => {
             alt="YNV logo"
           />
           <p className="text-2xl font-bold text-gray-200  bg-white/10 backdrop-blur-md px-4 py-2 rounded-2xl">
-            Solutions
+            YNV Solutions
           </p>
         </div>
 
@@ -64,6 +64,7 @@ const Navigation = () => {
             { name: "Home", link: "#home" },
             { name: "About Us", link: "#about" },
             { name: "Services", link: "#services" },
+            { name: "Team", link: "#team" },
             { name: "Projects", link: "#projects" },
           ].map((item, index) => (
             <a
@@ -108,6 +109,7 @@ const Navigation = () => {
           { name: "Home", link: "#home" },
           { name: "About Us", link: "#about" },
           { name: "Services", link: "#services" },
+          { name: "Team", link: "#team" },
           { name: "Projects", link: "#projects" },
         ].map((item, index) => (
           <a
