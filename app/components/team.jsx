@@ -36,7 +36,7 @@ const Team = () => {
             lurl:"https://www.linkedin.com/in/priya-singh-a5859799/",
             location:"Uttar Pradesh, India",
             email:"",
-        }
+
     ];
 
     return (
