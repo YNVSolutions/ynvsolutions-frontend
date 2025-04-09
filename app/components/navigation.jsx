@@ -78,13 +78,11 @@ const Navigation = () => {
         </div>
           <a
             href="#contact"
-            className="px-3 py-1.5 text-xl font-medium capitalize text-white bg-gradient-to-r from-gray-800 to-gray-900 border-2 border-gray-900 rounded-full relative overflow-hidden group transition-all duration-300 ease-out animate-fade-in"
+            className="px-3 py-2 text-xl font-medium capitalize bg-white/10 hover:bg-white/20 text-gray-300 hover:text-white  border-2 border-gray-400 rounded-2xl backdrop-blur-md relative overflow-hidden group transition-all duration-200 ease-in-out"
           >
-            <span className="absolute inset-0 bg-gradient-to-r from-gray-700 to-gray-800 transform translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
+            {/* <span className="absolute inset-0 bg-gradient-to-r from-gray-600 to-gray-700 transform translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300 ease-out"></span> */}
             <span className="relative z-10">Contact Us</span>
           </a>
-        </div>
-
         <button
           className="md:hidden text-3xl"
           onClick={() => setIsOpen(!isOpen)}
