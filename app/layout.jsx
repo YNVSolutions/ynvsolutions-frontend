@@ -5,8 +5,8 @@ const geist = Geist({ subsets: ["latin"] });
 const geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "YNV Tech",
-  description: "Created by YNV Tech",
+  title: "YNV Solutions",
+  description: "Created by YNV Solutions",
 };
 
 export default function RootLayout({ children }) {

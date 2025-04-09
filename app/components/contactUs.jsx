@@ -85,7 +85,6 @@ const ContactUs = () => {
                 👤
               </span>
             </div>
-
             <div className="relative">
               <input
                 type="email"
@@ -113,7 +112,6 @@ const ContactUs = () => {
                 💬
               </span>
             </div>
-
             <button
               type="submit"
               className="mt-2 py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-lg hover:opacity-90 transition-all text-base"

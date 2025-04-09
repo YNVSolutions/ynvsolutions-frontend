@@ -7,6 +7,8 @@ import Clients from "./components/clients";
 import ServiceSection from "./components/serviceSection";
 import Projects from "./components/projects";
 import Footer from "./components/footer";
+import Card from './components/team';
+
 const Page = () => {
 
   return (
@@ -22,16 +24,17 @@ const Page = () => {
         <div className='w-full  bg-black pb-10 pt-20'>
           <Clients />
         </div>
+        <div>
+          <Card />
+        </div>
         <div className='w-full bg-black'>
           <Projects />
         </div>
-        <div className='w-full bg-black pt-40 flex items-center justify-center '>
+        <div className='w-full bg-black pt-10 flex items-center justify-center '>
           <ContactUs />
         </div>
-        <div className='w-full bg-black pt-1  '>
-          <div>
+        <div className='w-full bg-black pt-1'>
             <Footer />
-          </div>
         </div>
       </div>
     </div>
