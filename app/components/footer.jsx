@@ -4,7 +4,7 @@ import { FaInstagram, FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/f
 const Footer = () => {
   return (
     <>
-       <footer className="bg-black border-t-pink-500 border-4 p-6">
+       <footer className="bg-black border-t-pink-500 border-t-2  p-6">
         <div className="footer bg-black text-white rounded-tl-4xl">
           <div className="theContainer mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
             
@@ -24,6 +24,7 @@ const Footer = () => {
               <ul className="text-gray-400 space-y-2">
                 <li><a role="button" href="#about" className="hover:text-white transition-colors">About Us</a></li>
                 <li><a role="button" href="#services" className="hover:text-white transition-colors">Services</a></li>
+                <li><a role="#team" href="#team" className="hover:text-white transition-colors">Our Team</a></li>
                 <li><a role="button" href="#projects" className="hover:text-white transition-colors">Projects</a></li>
                 <li><a role="button" href="#contactUs" className="hover:text-white transition-colors">Contact Us</a></li>
               </ul>
