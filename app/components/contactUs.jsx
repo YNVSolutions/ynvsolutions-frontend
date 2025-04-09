@@ -104,7 +104,7 @@ const ContactUs = () => {
                 rows="2"
                 placeholder="How can we help you?"
                 required
-                className="w-full p-3 pl-12 rounded-md bg-[#1a2238] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 text-xl"
+                className="w-full p-3 pl-12 rounded-md bg-[#1a2238] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
               ></textarea>
