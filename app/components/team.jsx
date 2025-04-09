@@ -23,10 +23,10 @@ const Team = () => {
         },
         {
             title: "Jitesh",
-            description: "App Developer",
+            description: "Android Developer",
             image: '/jitesh.png',
             lurl:"https://www.linkedin.com/in/jitesh-singh-920413285",
-            location:"Ludhiana, Punjab, India",
+            location:"Jalandhar, Punjab, India",
             email:"jiteshsingh4305@gmail.com",
         },
         {
@@ -57,18 +57,18 @@ const Team = () => {
                                 alt={`Image of ${element.title}`} 
                                 width={200} 
                                 height={200} 
-                                className="rounded-full mb-4 border-2 border-gray-200 p-1" 
+                                className="rounded-full mb-4 border-2 border-gray-200 p-1 bg-gray-900" 
                             />
                             <h1 className="text-xl font-semibold text-white">{element.title}</h1>
                             <p className="text-gray-400 mt-2">{element.description}</p>
                             <p className="text-gray-400 mt-2">{element.location}</p>
                             <div className="flex gap-4 mt-6">
-                                <a href={element.lurl} aria-label={`LinkedIn profile of ${element.title}`} className="hover:text-blue-700">
-                                    <FaLinkedin size={24} />
+                                <a href={element.lurl} aria-label={`LinkedIn profile of ${element.title}`} className="hover:text-blue-600">
+                                    <FaLinkedin size={28} />
                                 </a>
                                 {element.email && (
-                                    <a href={`mailto:${element.email}`} aria-label={`Email ${element.title}`} className="hover:text-red-700">
-                                        <BiLogoGmail size={24} />
+                                    <a href={`mailto:${element.email}`} aria-label={`Email ${element.title}`} className="hover:text-red-500">
+                                        <BiLogoGmail size={28} />
                                     </a>
                                 )}
                             </div>
