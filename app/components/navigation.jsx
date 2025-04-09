@@ -74,6 +74,8 @@ const Navigation = () => {
               {item.name}
             </a>
           ))}
+          
+        </div>
           <a
             href="#contact"
             className="px-3 py-1.5 text-xl font-medium capitalize text-white bg-gradient-to-r from-gray-800 to-gray-900 border-2 border-gray-900 rounded-full relative overflow-hidden group transition-all duration-300 ease-out animate-fade-in"
