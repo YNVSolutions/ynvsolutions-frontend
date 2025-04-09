@@ -66,6 +66,7 @@ const Navigation = () => {
             { name: "Services", link: "#services" },
             { name: "Team", link: "#team" },
             { name: "Projects", link: "#projects" },
+            { name: "Our Team", link: "#team" },
           ].map((item, index) => (
             <a
               key={index}
@@ -111,6 +112,7 @@ const Navigation = () => {
           { name: "Services", link: "#services" },
           { name: "Team", link: "#team" },
           { name: "Projects", link: "#projects" },
+          { name: "Our Team", link: "#team" },
         ].map((item, index) => (
           <a
             key={index}
