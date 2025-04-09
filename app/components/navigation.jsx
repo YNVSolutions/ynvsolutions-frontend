@@ -43,7 +43,7 @@ const Navigation = () => {
   return (
     <>
       <div
-        className={`navBar shadow-lg bg-gradient-to-r from-[#ec4899]/35 via-[#8b5cf6]/35 to-[#3b82f6]/35 w-full flex justify-between items-center fixed z-[999] bg-white/70 backdrop-blur-md p-[10px] rounded-md transition-all duration-${transitionDuration} ease-in-out ${
+        className={`navBar p-4 w-full flex justify-between items-center fixed z-[999] rounded-md transition-all duration-${transitionDuration} ease-in-out ${
           isVisible ? "top-0" : "-top-full"
         }`}
       >
