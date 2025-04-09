@@ -2,26 +2,25 @@
 import React, { useState } from "react";
 import { ToastContainer, toast, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import {db} from "./firebaseConfig"
-import {collection, addDoc} from "firebase/firestore"
+import { db } from "./firebaseConfig";
+import { collection, addDoc } from "firebase/firestore";
 
-async function addData(name,email,message){
-  try{
-    const docRef = await addDoc(collection(db,"messages"),{
+async function addData(name, email, message) {
+  try {
+    const docRef = await addDoc(collection(db, "messages"), {
       name: name,
       email: email,
       message: message,
     });
-    console.log("doc added with ID",docRef.id)
+    console.log("doc added with ID", docRef.id);
     return true;
-  }catch(error){
-    console.error("error!",error)
-    return false
+  } catch (error) {
+    console.error("error!", error);
+    return false;
   }
 }
 
 const ContactUs = () => {
-
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -39,10 +38,10 @@ const ContactUs = () => {
       transition: Bounce,
     });
 
-  const handleSubmit = async(e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const added= await addData(name,email,message);
-    if (added){
+    const added = await addData(name, email, message);
+    if (added) {
       setName("");
       setEmail("");
       setMessage("");
@@ -52,104 +51,78 @@ const ContactUs = () => {
 
   return (
     <>
-      <div
-        className="m-4 md:m-6 mt-20 md:mt-16 w-full min-h-[90vh] md:min-h-[80vh] rounded-2xl bg-gray-900 
-        flex flex-col md:flex-row items-center justify-center shadow-2xl p-4"
-        id="contactUs"
+      <section
+        className="min-h-screen bg-cover bg-center flex items-center justify-center px-6 py-24"
+        style={{
+          backgroundImage:
+            "url(https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1470&q=80)",
+        }}
       >
-        
-        <div className="bg-transparent w-full h-full flex-[1.5] p-6 md:p-10">
-          <div className="w-full h-auto p-2 md:p-4">
-            <h1 className="content-text text-white text-5xl md:text-8xl mb-2 md:mb-4 text-center md:text-left">Contact Us</h1>
-          </div>
-
-          
-          <div className="hidden flex-col sm:flex-row justify-center md:justify-around items-center gap-4 mt-6">
-            <div className="bg-gray-950 w-full sm:w-1/3 p-6 rounded-2xl text-center">
-              <p className="text-gray-100 text-lg">Need an app for your website?</p>
-              <p className="text-gray-400 mt-4">We got you covered!</p>
-            </div>
-            <div className="bg-gray-950 w-full sm:w-1/3 p-6 rounded-2xl text-center">
-              <p className="text-gray-100 text-lg">Are you lagging in the AI race?</p>
-              <p className="text-gray-400 mt-4">Let's boost you!</p>
-            </div>
-            <div className="bg-gray-950 w-full sm:w-1/3 p-6 rounded-2xl text-center">
-              <p className="text-gray-100 text-lg">Custom Android kiosks that survive 24/7 use?</p>
-              <p className="text-gray-400 mt-4">Just name it, we'll figure!</p>
-            </div>
-          </div>
-        </div>
-
-        
-        <div className="bg-transparent w-full flex-1 p-4 md:p-8 flex items-center justify-center">
-          <div className="bg-gray-700 w-full sm:w-4/5 p-6 md:p-8 rounded-2xl shadow-2xl shadow-blue-900/50">
-            <h2 className="content-text text-white text-3xl md:text-5xl text-center md:text-left" style={{ background: "none", border: "none" }}>Get in touch</h2>
-            <p className="text-gray-100 text-sm md:text-md text-center md:text-left mb-4 ms-2">
-              Let’s discuss how we can help
+        <div className="w-full max-w-7xl bg-black/70 backdrop-blur-lg p-16 rounded-2xl shadow-2xl text-white flex flex-col md:flex-row gap-12 items-start justify-between">
+          <div className="md:w-1/2 space-y-8">
+            <h3 className="text-3xl font-semibold">Get in Touch</h3>
+            <h2 className="text-5xl !text-white">Contact Us</h2>
+            <p className="text-lg">
+              Email us at:{" "}
+              <a href="mailto:ynvtech@gmail.com" className="text-blue-400">
+                ynvtech@gmail.com
+              </a>
+              <br />
+              OR, fill the form and we will reach out to you.
             </p>
-            <form onSubmit={handleSubmit}>
-              
-              <div className="flex flex-col sm:flex-row gap-2">
-              <label htmlFor="name" className="sr-only">Name</label>
-                <input
-                  className="w-full p-3 bg-gray-900 focus:bg-gray-950 text-white border border-gray-600 rounded-lg 
-                  focus:outline-none focus:ring-2 focus:ring-blue-400 border-none"
-                  type="text"
-                  id="name"
-                  value={name}
-                  onChange={(e)=>setName(e.target.value)}
-                  placeholder="Name"
-                  required
-                />
-              </div>
-
-              
-              <div className="w-full mt-2">
-              <label htmlFor="email" className="sr-only">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  value={email}
-                  onChange={(e)=>setEmail(e.target.value)}
-                  required
-                  placeholder="Email address"
-                  className="w-full p-3 bg-gray-900 focus:bg-gray-950 text-white border border-gray-600 rounded-lg 
-                  focus:outline-none focus:ring-2 focus:ring-blue-400 border-none"
-                />
-              </div>
-
-              
-              <div className="w-full mt-4">
-              <label htmlFor="message" className="sr-only">Message</label>
-                <textarea
-                  placeholder="How can we help you?"
-                  id="message"
-                  value={message}
-                  onChange={(e)=>setMessage(e.target.value)}
-                  rows={4}
-                  className="w-full p-3 bg-gray-900 border border-gray-600 text-white rounded-lg 
-                  focus:outline-none focus:ring-2 focus:ring-blue-400 focus:bg-gray-950 resize-none border-none"
-                ></textarea>
-              </div>
-
-              
-              <div className="w-full mt-3">
-                <button
-                  type="submit"
-                  className="w-full p-[2px] rounded-lg border-none group relative bg-gradient-to-r from-pink-500 via-blue-500
-                   to-pink-500 bg-[length:200%_auto] hover:bg-[position:100%_center] transition-all duration-500 ease-out 
-                   overflow-hidden"
-                >
-                  <div className="w-full h-full p-3 bg-gray-900 rounded-lg text-white text-center font-medium 
-                      group-hover:bg-gray-950 transition-colors duration-300">
-                    Send Message
-                  </div>
-                </button>
-              </div>
-            </form>
           </div>
+          <form onSubmit={handleSubmit} className="md:w-1/2 flex flex-col gap-5">
+            <div className="relative">
+              <input
+                type="text"
+                placeholder="Name"
+                required
+                className="w-full p-3 pl-12 rounded-md bg-[#1a2238] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 text-base"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+              <span className="absolute left-4 top-3 text-purple-300 text-lg">
+                👤
+              </span>
+            </div>
+
+            <div className="relative">
+              <input
+                type="email"
+                placeholder="Email address"
+                required
+                className="w-full p-3 pl-12 rounded-md bg-[#1a2238] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 text-base"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <span className="absolute left-4 top-3 text-blue-300 text-lg">
+                📧
+              </span>
+            </div>
+
+            <div className="relative">
+              <textarea
+                rows="2"
+                placeholder="How can we help you?"
+                required
+                className="w-full p-3 pl-12 rounded-md bg-[#1a2238] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 text-base"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+              ></textarea>
+              <span className="absolute left-4 top-3 text-gray-300 text-lg">
+                💬
+              </span>
+            </div>
+
+            <button
+              type="submit"
+              className="mt-2 py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-lg hover:opacity-90 transition-all text-base"
+            >
+              Send Message
+            </button>
+          </form>
         </div>
-      </div>
+      </section>
       <ToastContainer />
     </>
   );
