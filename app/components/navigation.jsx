@@ -11,8 +11,9 @@ const Navigation = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPosition = window.scrollY;
-
-      if (currentScrollPosition > scrollPosition) {
+      const threshold = 200; // Hide navbar only after scrolling 100px
+  
+      if (currentScrollPosition > scrollPosition && currentScrollPosition > threshold) {
         if (isVisible && !isTransitioning) {
           setIsTransitioning(true);
           setTimeout(() => {
@@ -20,7 +21,7 @@ const Navigation = () => {
             setIsTransitioning(false);
           }, transitionDuration);
         }
-      } else {
+      } else if (currentScrollPosition < scrollPosition) {
         if (!isVisible && !isTransitioning) {
           setIsTransitioning(true);
           setIsVisible(true);
@@ -29,12 +30,12 @@ const Navigation = () => {
           }, transitionDuration);
         }
       }
-
+  
       setScrollPosition(currentScrollPosition);
     };
-
+  
     window.addEventListener("scroll", handleScroll);
-
+  
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -75,7 +76,7 @@ const Navigation = () => {
           ))}
           
         </div>
-          <a
+        <a
             href="#contact"
             className="px-3 py-2 text-xl font-medium capitalize bg-white/10 hover:bg-white/20 text-gray-300 hover:text-white  border-2 border-gray-400 rounded-2xl backdrop-blur-md relative overflow-hidden group transition-all duration-200 ease-in-out"
           >
