@@ -47,12 +47,15 @@ const Navigation = () => {
           isVisible ? "top-0" : "-top-full"
         }`}
       >
-        <div className="logo">
+        <div className="logo flex items-center gap-2">
           <img
             src="/favicon.ico"
             className="w-14 h-14 rounded-full border-2 border-gray-600"
             alt="YNV logo"
           />
+          <p className="text-2xl font-bold text-gray-200  bg-white/10 backdrop-blur-md px-4 py-2 rounded-2xl">
+            Solutions
+          </p>
         </div>
 
         <div className="hidden md:flex gap-10  items-center">
