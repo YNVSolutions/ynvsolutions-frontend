@@ -69,6 +69,5 @@ body,html{
   button:hover, .btn:hover {
     background: linear-gradient(90deg, #732d91, #1f6699);
     transition : 0.2s;
-    /* color: rgb(32, 32, 32) */
     
   }
