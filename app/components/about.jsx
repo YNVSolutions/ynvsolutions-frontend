@@ -16,10 +16,10 @@ const About = () => {
         <div className="py-12 sm:py-16 md:py-24 lg:py-32 bg-black/60">
           <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col lg:flex-row items-center justify-between">
             <div className="lg:w-1/2 mb-8 lg:mb-0 text-center lg:text-left">
-              <p className="uppercase text-gray-400 font-semibold tracking-wider mb-2 text-sm sm:text-base md:text-lg lg:text-xl">
+              <p className="uppercase text-gray-400 font-semibold tracking-wider mb-2 text-lg sm:text-lg md:text-lg lg:text-xl">
                 ABOUT US
               </p>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-4">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-semibold text-white mb-4">
               YNV: <br/><span className="text">Innovating </span>
                 <span className="text">Digital Transformation</span>
               </h1>
