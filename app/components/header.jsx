@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const Header = () => {
     return (
         <motion.div
-            className="bg-black pt-15 md:pt-23 lg:pt-33 pb-10 md:pb-15 lg:pb-20 text-white relative overflow-hidden"
+            className="bg-black pt-18 md:pt-23 lg:pt-33 pb-10 md:pb-15 lg:pb-20 text-white relative overflow-hidden"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, ease: "easeInOut" }}
