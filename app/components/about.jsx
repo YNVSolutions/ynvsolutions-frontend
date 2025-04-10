@@ -19,9 +19,9 @@ const About = () => {
               <p className="uppercase text-gray-400 font-semibold tracking-wider mb-2 text-sm sm:text-base md:text-lg lg:text-xl">
                 ABOUT US
               </p>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-                Driving Digital <span className="text">Transformation</span> via{' '}
-                <span className="text">Innovation.</span>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-4">
+              YNV: <br/><span className="text">Innovating </span>
+                <span className="text">Digital Transformation</span>
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-6">
                 We are a dynamic technology company that builds the future through advanced AI solutions, powerful Mobile Device Management, and exceptional mobile app development for Android and iOS. Our website is your gateway to exploring our services, diving into our portfolio, and connecting with our team. Let's innovate together.
