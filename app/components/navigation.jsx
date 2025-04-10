@@ -6,13 +6,13 @@ const Navigation = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [scrollPosition, setScrollPosition] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
-  const transitionDuration = 500;
+  const transitionDuration = 300;
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPosition = window.scrollY;
-      const threshold = 200; 
-  
+      const threshold = 200;
+
       if (currentScrollPosition > scrollPosition && currentScrollPosition > threshold) {
         if (isVisible && !isTransitioning) {
           setIsTransitioning(true);
@@ -30,63 +30,59 @@ const Navigation = () => {
           }, transitionDuration);
         }
       }
-  
+
       setScrollPosition(currentScrollPosition);
     };
-  
+
     window.addEventListener("scroll", handleScroll);
-  
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [scrollPosition, isVisible, isTransitioning, transitionDuration]);
+
   return (
     <>
       <div
-        className={`navBar p-4 w-full flex justify-between items-center fixed z-[999] rounded-md transition-all duration-${transitionDuration} ease-in-out ${
+        className={`navBar p-3 w-full flex justify-between items-center fixed z-[999] rounded-md transition-all duration-${transitionDuration} ease-in-out ${
           isVisible ? "top-0" : "-top-full"
-        }`}
+        } bg-gray-900/80 backdrop-blur-md`}
       >
+        {/* Logo Section */}
         <div className="logo flex items-center gap-2">
           <img
             src="/favicon.ico"
-            className="w-14 h-14 rounded-full border-2 border-gray-600"
+            className="w-12 h-12 rounded-full border-2 border-gray-600"
             alt="YNV logo"
           />
-          <p className="text-2xl font-bold text-gray-200  bg-white/10 backdrop-blur-md px-4 py-2 rounded-2xl">
+          <p className="text-lg md:text-2xl font-bold text-gray-200 bg-white/10 backdrop-blur-md px-3 py-1 md:px-4 md:py-2 rounded-2xl">
             YNV Solutions
           </p>
         </div>
 
-    
-        <div className="hidden md:flex gap-8 items-center bg-white/10 backdrop-blur-md rounded-2xl justify-around p-1 px-3 shadow-2xl">
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex gap-6 lg:gap-8 items-center bg-white/10 backdrop-blur-md rounded-2xl justify-around p-1 px-3 shadow-2xl">
           {[
             { name: "Home", link: "#home" },
             { name: "About Us", link: "#about" },
             { name: "Services", link: "#services" },
             { name: "Team", link: "#team" },
             { name: "Projects", link: "#projects" },
-            { name: "Our Team", link: "#team" },
+            { name: "Contact", link: "#contact" },
           ].map((item, index) => (
             <a
               key={index}
               href={item.link}
-              className="text-xl font-medium capitalize  hover:bg-white/10 text-gray-300 hover:text-white rounded-2xl p-2 px-3  drop-shadow-md transition-all duration-200 ease-in-out"
+              className="text-sm md:text-lg font-medium capitalize hover:bg-white/10 text-gray-300 hover:text-white rounded-2xl lg:p-2 md:p-1 px-2 md:px-3 drop-shadow-md transition-all duration-200 ease-in-out"
             >
               {item.name}
             </a>
           ))}
-          
         </div>
-        <a
-            href="#contact"
-            className="px-3 py-2 text-xl font-medium capitalize bg-white/10 hover:bg-white/20 text-gray-300 hover:text-white  border-2 border-gray-400 rounded-2xl backdrop-blur-md relative overflow-hidden group transition-all duration-200 ease-in-out"
-          >
-            {/* <span className="absolute inset-0 bg-gradient-to-r from-gray-600 to-gray-700 transform translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300 ease-out"></span> */}
-            <span className="relative z-10">Contact Us</span>
-          </a>
+
+        {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-3xl"
+          className="md:hidden text-3xl text-gray-300"
           onClick={() => setIsOpen(!isOpen)}
           style={{ background: "none", border: "none" }}
         >
@@ -94,10 +90,11 @@ const Navigation = () => {
         </button>
       </div>
 
+      {/* Mobile Drawer */}
       <div
-        className={`fixed top-0 right-0 w-58 h-full shadow-lg bg-gray-800/60 backdrop-blur-md p-[20px] rounded-md transform ${
+        className={`fixed top-0 right-0 w-64 h-full shadow-lg bg-gray-800/90 backdrop-blur-md p-5 rounded-md transform ${
           isOpen ? "translate-x-0" : "translate-x-full"
-        } transition-transform duration-300 ease-in-out z-[1000] p-5 flex flex-col gap-5`}
+        } transition-transform duration-300 ease-in-out z-[1000] flex flex-col gap-5`}
       >
         <button
           className="text-white text-3xl self-end"
@@ -112,24 +109,17 @@ const Navigation = () => {
           { name: "Services", link: "#services" },
           { name: "Team", link: "#team" },
           { name: "Projects", link: "#projects" },
-          { name: "Our Team", link: "#team" },
+          { name: "Contact", link: "#contact" },
         ].map((item, index) => (
           <a
             key={index}
             href={item.link}
-            className="text-xl font-medium capitalize text-gray-200 p-2 ps-4 rounded-md"
+            className="text-lg font-medium capitalize text-gray-200 p-2 ps-4 rounded-md hover:bg-gray-700 transition-all duration-200 ease-in-out"
             onClick={() => setIsOpen(false)}
           >
             {item.name}
           </a>
         ))}
-        <a
-          href="#contact"
-          className="p-2 ps-3 text-xl font-medium capitalize text-white bg-gradient-to-r from-gray-800 to-gray-700 border-2 border-black rounded-3xl shadow-2xl"
-          onClick={() => setIsOpen(false)}
-        >
-          Contact Us
-        </a>
       </div>
 
       {/* Overlay to close drawer when clicking outside */}

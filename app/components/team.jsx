@@ -6,7 +6,7 @@ import { BiLogoGmail } from "react-icons/bi";
 const Team = () => {
     const data = [
         {
-            title: "Dharmendra",
+            title: "Dharmendra Singh",
             description: "Technical Consultant",
             image: '/dharmendra.png',
             lurl:"https://www.linkedin.com/in/dharmsingh",
@@ -14,7 +14,7 @@ const Team = () => {
             email:"dharmendrascpm@gmail.com",
         },
         {
-            title: "Yash",
+            title: "Yash Raghuvanshi",
             description: "Full Stack Developer",
             image: '/yash.png',
             lurl:"https://www.linkedin.com/in/yash-raghuvanshi-a14361287",
@@ -22,7 +22,7 @@ const Team = () => {
             email:"yashraghuvans@gmail.com"
         },
         {
-            title: "Jitesh",
+            title: "Jitesh Singh",
             description: "Android Developer",
             image: '/jitesh.png',
             lurl:"https://www.linkedin.com/in/jitesh-singh-920413285",
@@ -30,12 +30,12 @@ const Team = () => {
             email:"jiteshsingh4305@gmail.com",
         },
         {
-            title: "Priya",
+            title: "Priya Singh",
             description: "Frontend Developer",
             image: '/priya.png',
             lurl:"https://www.linkedin.com/in/priya-singh-a5859799/",
             location:"Uttar Pradesh, India",
-            email:"",
+            email:"priyasinghlpu128@gmail.com",
         },
 
     ];
@@ -50,7 +50,7 @@ const Team = () => {
                     {data.slice(0, 4).map((element) => (
                         <div 
                             key={element.title} 
-                            className="bg-gray-800 rounded-lg shadow-lg p-4 min-w-[200px] min-h-[280px] flex flex-col items-center justify-center"
+                            className="bg-gray-800 rounded-lg shadow-lg p-4 min-w-[200px] min-h-[280px] flex flex-col items-center justify-center transform transition-transform duration-300 hover:scale-105"
                         >
                             <Image 
                                 src={element.image} 

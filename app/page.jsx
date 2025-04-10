@@ -8,17 +8,20 @@ import ServiceSection from "./components/serviceSection";
 import Projects from "./components/projects";
 import Footer from "./components/footer";
 import Card from './components/team';
-
+import Header from './components/header';
 const Page = () => {
 
   return (
     <div>
-      <div className='w-full h-screen text-white'>
+      <div className='w-full text-white'>
         <Navigation />
+      </div>
+      <div className='w-full text-white'>
+        <Header/>
         <About />
       </div>
       <div className='w-full h-[150vh] bg-black'>
-        <div className='w-full  bg-black pt-10'>
+        <div className='w-full  bg-black pt-5'>
           <ServiceSection />
         </div>
         <div className='w-full  bg-black pb-10 pt-20'>
@@ -34,7 +37,7 @@ const Page = () => {
           <ContactUs />
         </div>
         <div className='w-full bg-black pt-1'>
-            <Footer />
+          <Footer />
         </div>
       </div>
     </div>
