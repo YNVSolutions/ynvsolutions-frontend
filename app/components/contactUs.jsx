@@ -51,7 +51,7 @@ const ContactUs = () => {
 
   return (
     <>
-      <section
+      <section id="contact"
         className="min-h-screen bg-cover bg-center flex items-center justify-center px-6 py-24"
         style={{
           backgroundImage:
@@ -61,7 +61,7 @@ const ContactUs = () => {
         <div className="w-full max-w-7xl bg-black/70 backdrop-blur-lg p-16 rounded-2xl shadow-2xl text-white flex flex-col md:flex-row gap-12 items-start justify-between">
           <div className="md:w-1/2 space-y-8">
             <h3 className="text-3xl font-semibold">Get in Touch</h3>
-            <h2 className="text-5xl !text-white">Contact Us</h2>
+            <h1 className="text-5xl !text-white">Contact Us</h1>
             <p className="text-lg">
               Email us at:{" "}
               <a href="mailto:ynvtech@gmail.com" className="text-blue-400">
@@ -102,9 +102,9 @@ const ContactUs = () => {
             <div className="relative">
               <textarea
                 rows="2"
-                placeholder="How can we help you?"
+                placeholder={`How can we help you?`}
                 required
-                className="w-full p-3 pl-12 rounded-md bg-[#1a2238] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg"
+                className="w-full p-3 pl-12 rounded-md bg-[#1a2238] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 text-xl"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
               ></textarea>
