@@ -1,46 +1,62 @@
 import Link from 'next/link';
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const Header = () => {
     return (
-        <>
-            <div className="bg-transparent pt-20 md:pt-32 lg:pt-48 pb-12 md:pb-24 lg:pb-35 text-white relative overflow-hidden">
-                <div className="container mx-auto px-4 md:px-8 lg:px-12 flex flex-col lg:flex-row items-center justify-between">
-                    <div className="lg:w-1/2 mb-8 lg:mb-0 text-center lg:text-left">
-                        <p className="bg-purple-600 bg-opacity-50 rounded-full py-2 px-4 text-sm mb-4 inline-block">
-                            Welcome To YNV Solutions!
-                        </p>
-                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-6">
-                            <span className="text">Empowering </span> <br />
-                            Digital <span className="text">Transformation </span><br />
-                            Through Intelligent<br /> <span className="text">Solutions.</span>
-                        </h1>
-                        <div className="flex justify-center lg:justify-start space-x-4">
-                            <Link href="#services">
-                                <button className="bg-white text-purple-800 font-semibold py-3 px-6 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
-                                    Get Started
-                                </button>
-                            </Link>
-                            <Link href="#projects">
-                                <button className="bg-white text-purple-800 font-semibold py-3 px-6 rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
-                                    Watch Demo
-                                </button>
-                            </Link>
-                        </div>
-                    </div>
-
-                    {/* Video Section */}
-                    <div className="lg:w-1/2 relative hidden md:block">
-                        <div className="bg-black bg-opacity-30 rounded-xl shadow-lg border border-purple-700">
-                            <video className="rounded-xl" autoPlay loop muted playsInline width="100%" height="auto">
-                                <source src="/main.mp4" type="video/mp4" />
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                    </div>
+        <motion.div
+            className="bg-black pt-14 md:pt-22 lg:pt-32 pb-16 md:pb-28 lg:pb-26 text-white relative overflow-hidden"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+        >
+            <div className="container mx-auto px-6 md:px-12 lg:px-16 flex flex-col lg:flex-row items-center justify-between">
+                <div className="lg:w-1/2 mb-10 lg:mb-0 text-center lg:text-left z-10">
+                    <motion.h1
+                        className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-8"
+                        initial={{ y: -20, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+                    >
+                        YNV :<br/>
+                        <span className="text">Intelligent </span><br/>Digital
+                        <span className="text"> Power.</span>
+                    </motion.h1>
+                    <motion.p
+                        className="text-lg md:text-xl text-gray-300 mb-8"
+                        initial={{ y: 20, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
+                    >
+                        Unlocking the future with cutting-edge technology and innovative solutions.
+                    </motion.p>
+                    <motion.div
+                        className="flex justify-center lg:justify-start space-x-4"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
+                    >
+                        <Link href="#contact" className="bg-transparent hover:bg-pink-500 text-white font-semibold py-3 px-6 rounded-full border border-pink-500 focus:outline-none focus:ring-2 focus:ring-pink-400 focus:ring-offset-2">
+                            Contact Us
+                        </Link>
+                    </motion.div>
+                </div>
+                <div className="lg:w-1/2 relative">
+                    <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 rounded-xl"></div>
+                    <motion.div
+                        className="rounded-xl shadow-xl border-b-2 border-b-pink-700 border-t-2 border-t-blue-700 overflow-hidden relative" 
+                        initial={{ scale: 0.9, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+                    >
+                        <video className="rounded-xl object-cover w-full h-full aspect-video" autoPlay loop muted playsInline>
+                            <source src="/main.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </motion.div>
                 </div>
             </div>
-        </>
+        </motion.div>
     );
 };
 
