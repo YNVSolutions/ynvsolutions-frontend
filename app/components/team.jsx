@@ -50,7 +50,7 @@ const Team = () => {
                     {data.slice(0, 4).map((element) => (
                         <div 
                             key={element.title} 
-                            className="bg-gray-800 rounded-lg shadow-lg p-4 min-w-[200px] min-h-[280px] flex flex-col items-center justify-center"
+                            className="bg-gray-800 rounded-lg shadow-lg p-4 min-w-[200px] min-h-[280px] flex flex-col items-center justify-center transform transition-transform duration-300 hover:scale-105"
                         >
                             <Image 
                                 src={element.image} 
