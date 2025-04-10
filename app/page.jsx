@@ -13,7 +13,7 @@ const Page = () => {
 
   return (
     <div>
-      <div className='w-full h-screen text-white'>
+      <div className='w-full text-white'>
         <Navigation />
         <About />
       </div>
