@@ -18,8 +18,6 @@ const Page = () => {
       </div>
       <div className='w-full text-white'>
         <Header/>
-      </div>
-      <div className='w-full text-white'>
         <About />
       </div>
       <div className='w-full h-[150vh] bg-black'>
