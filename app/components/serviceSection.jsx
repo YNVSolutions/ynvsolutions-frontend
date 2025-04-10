@@ -15,7 +15,7 @@ const ServiceSection = () => {
     },
     {
       title: "MDM Solution",
-      description: "Our MDM solution ensures complete privacy and security for your company devices. We offer device tracing, mobile management with data security, identity and access management, and BYOD authentication. Benefit from time savings, improved efficiency, and enhanced security.",
+      description: "Our MDM solution ensures complete privacy and security for company devices. We offer device tracing, mobile management with data security, access management, and BYOD authentication. Benefit from time savings, improved efficiency, and enhanced security.",
       image: '/mdm.gif',
       offers: [
         "Device Tracking & Monitoring",
