@@ -9,6 +9,7 @@ const Header = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, ease: "easeInOut" }}
+            id='home'
         >
             <div className="container mx-auto px-6 md:px-12 lg:px-16 flex flex-col lg:flex-row items-center justify-between">
                 <div className="lg:w-1/2 mb-10 lg:mb-0 text-center lg:text-left z-10">
