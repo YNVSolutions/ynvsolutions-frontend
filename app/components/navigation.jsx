@@ -1,5 +1,14 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
+
+const NAV_LINKS = [
+  { name: "Home", link: "#home" },
+  { name: "Features", link: "#features" },
+  { name: "Pricing", link: "#pricing" },
+  { name: "About", link: "#about" },
+  { name: "Contact", link: "#contact" },
+];
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,89 +52,85 @@ const Navigation = () => {
 
   return (
     <>
-      <div
-        className={`navBar p-3 w-full flex justify-between items-center fixed z-[999] rounded-md transition-all duration-${transitionDuration} ease-in-out ${
+      <header
+        className={`bg-gray-950 text-white shadow-lg sticky z-50 transition-all duration-${transitionDuration} ease-in-out ${
           isVisible ? "top-0" : "-top-full"
-        } bg-gray-900/80 backdrop-blur-md`}
+        }`}
+        style={{ transitionProperty: "top" }}
       >
-        {/* Logo Section */}
-        <div className="logo flex items-center gap-2">
-          <img
-            src="/favicon.ico"
-            className="w-12 h-12 rounded-full border-2 border-gray-600"
-            alt="YNV logo"
-          />
-          <p className="text-lg md:text-2xl font-bold text-gray-200 bg-white/10 backdrop-blur-md px-3 py-1 md:px-4 md:py-2 rounded-2xl">
-            YNV Solutions
-          </p>
+        <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
+          <div className="flex justify-between items-center h-20">
+            {/* Logo / Company Name */}
+            <div className="flex items-center gap-3">
+              <img
+                src="/favicon.ico"
+                className="w-10 h-10 rounded-full border-2 border-gray-700"
+                alt="YNV logo"
+              />
+              <span className="text-2xl font-bold tracking-tight text-white">
+                YNV Solutions
+              </span>
+            </div>
+
+            {/* Desktop Navigation */}
+            <nav className="hidden md:flex space-x-8 items-center text-sm font-medium">
+              {NAV_LINKS.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.link}
+                  className="hover:text-gray-300 transition"
+                >
+                  {item.name}
+                </a>
+              ))}
+              <a
+                href="#get-started"
+                className="ml-4 bg-indigo-600 hover:bg-indigo-500 transition px-4 py-2 rounded-lg text-white font-semibold text-sm"
+              >
+                Get Started
+              </a>
+            </nav>
+
+            {/* Mobile Toggle */}
+            <div className="md:hidden">
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="text-gray-300 hover:text-white focus:outline-none"
+                aria-label="Toggle menu"
+              >
+                {isOpen ? <X size={26} /> : <Menu size={26} />}
+              </button>
+            </div>
+          </div>
         </div>
 
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex gap-6 lg:gap-8 items-center bg-white/10 backdrop-blur-md rounded-2xl justify-around p-1 px-3 shadow-2xl">
-          {[
-            { name: "Home", link: "#home" },
-            { name: "About Us", link: "#about" },
-            { name: "Services", link: "#services" },
-            { name: "Team", link: "#team" },
-            { name: "Projects", link: "#projects" },
-            { name: "Contact", link: "#contact" },
-          ].map((item, index) => (
+        {/* Mobile Menu */}
+        {isOpen && (
+          <div className="md:hidden bg-gray-900 transition-all duration-300 px-6 pb-6 space-y-4">
+            {NAV_LINKS.map((item) => (
+              <a
+                key={item.name}
+                href={item.link}
+                className="block border-b border-gray-700 pb-2"
+                onClick={() => setIsOpen(false)}
+              >
+                {item.name}
+              </a>
+            ))}
             <a
-              key={index}
-              href={item.link}
-              className="text-sm md:text-lg font-medium capitalize hover:bg-white/10 text-gray-300 hover:text-white rounded-2xl lg:p-2 md:p-1 px-2 md:px-3 drop-shadow-md transition-all duration-200 ease-in-out"
+              href="#get-started"
+              className="inline-block w-full text-center bg-indigo-600 hover:bg-indigo-500 transition px-4 py-2 rounded-md text-white font-semibold"
+              onClick={() => setIsOpen(false)}
             >
-              {item.name}
+              Get Started
             </a>
-          ))}
-        </div>
-
-        {/* Mobile Menu Button */}
-        <button
-          className="md:hidden text-3xl text-gray-300"
-          onClick={() => setIsOpen(!isOpen)}
-          style={{ background: "none", border: "none" }}
-        >
-          ☰
-        </button>
-      </div>
-
-      {/* Mobile Drawer */}
-      <div
-        className={`fixed top-0 right-0 w-64 h-full shadow-lg bg-gray-800/90 backdrop-blur-md p-5 rounded-md transform ${
-          isOpen ? "translate-x-0" : "translate-x-full"
-        } transition-transform duration-300 ease-in-out z-[1000] flex flex-col gap-5`}
-      >
-        <button
-          className="text-white text-3xl self-end"
-          onClick={() => setIsOpen(false)}
-          style={{ background: "none", border: "none" }}
-        >
-          ✕
-        </button>
-        {[
-          { name: "Home", link: "#home" },
-          { name: "About Us", link: "#about" },
-          { name: "Services", link: "#services" },
-          { name: "Team", link: "#team" },
-          { name: "Projects", link: "#projects" },
-          { name: "Contact", link: "#contact" },
-        ].map((item, index) => (
-          <a
-            key={index}
-            href={item.link}
-            className="text-lg font-medium capitalize text-gray-200 p-2 ps-4 rounded-md hover:bg-gray-700 transition-all duration-200 ease-in-out"
-            onClick={() => setIsOpen(false)}
-          >
-            {item.name}
-          </a>
-        ))}
-      </div>
-
+          </div>
+        )}
+      </header>
       {/* Overlay to close drawer when clicking outside */}
       {isOpen && (
         <div
-          className="fixed top-0 left-0 w-full h-full bg-black/50 z-[999]"
+          className="fixed top-0 left-0 w-full h-full bg-black/50 z-[40]"
           onClick={() => setIsOpen(false)}
         ></div>
       )}
